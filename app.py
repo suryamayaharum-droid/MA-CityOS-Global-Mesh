@@ -3,27 +3,17 @@ import os
 import json
 import pandas as pd
 from datetime import datetime
-import random
+from src.agents.openclaude_bridge import OpenClawBridge
 
 st.set_page_config(page_title="MA-CityOS Terminal", page_icon="💻", layout="wide", initial_sidebar_state="expanded")
 
 # --- CSS CUSTOMIZADO (Cyberpunk Feel) ---
 st.markdown("""
     <style>
-    .stMetric {
-        background-color: #1A1A1A;
-        border-left: 3px solid #00FF41;
-        padding: 10px;
-        border-radius: 5px;
-    }
-    .main-header {
-        font-family: 'Courier New', Courier, monospace;
-        color: #00FF41;
-        text-shadow: 0 0 5px #00FF41;
-    }
-    .radar-card {
-        background: #111; border: 1px solid #333; padding: 15px; border-radius: 8px; margin-bottom: 10px;
-    }
+    .stMetric { background-color: #1A1A1A; border-left: 3px solid #00FF41; padding: 10px; border-radius: 5px; }
+    .main-header { font-family: 'Courier New', Courier, monospace; color: #00FF41; text-shadow: 0 0 5px #00FF41; }
+    .radar-card { background: #111; border: 1px solid #333; padding: 15px; border-radius: 8px; margin-bottom: 10px; }
+    .chat-bubble { background: #1A1A1A; border: 1px solid #00FF41; padding: 15px; border-radius: 10px; margin: 10px 0; font-family: 'Courier New', monospace; }
     </style>
 """, unsafe_allow_html=True)
 
@@ -38,12 +28,12 @@ def load_json(filename):
     except: pass
     return None
 
-config = load_json("city_config.json") or {"districts": [], "version": "2.0.0"}
+config = load_json("city_config.json") or {"districts": [], "version": "2.1.0"}
 global_status = load_json("city_data/global_status.json") or {}
 news_feed = load_json("city_data/news_feed.json") or []
 radar_data = load_json("city_data/global_radar.json") or []
 
-# --- BARRA LATERAL (Cyber Shield & Status) ---
+# --- BARRA LATERAL ---
 with st.sidebar:
     st.markdown('<h2 style="color:#00FF41;">🛡️ CYBER SHIELD</h2>', unsafe_allow_html=True)
     alerts = global_status.get("security_alerts", [])
@@ -56,24 +46,48 @@ with st.sidebar:
         st.success("✅ INTEGRIDADE DO SISTEMA: 100%")
         
     st.divider()
-    st.markdown('### ⚙️ SISTEMA AUTÔNOMO')
+    st.markdown('### ⚡ AGENTES ATIVOS')
+    st.write("🐝 Swarm Workers: Ativos")
+    st.write("🤖 OpenClaude: Conectado (OpenRouter)")
     if st.button("🔌 FORÇAR SINCRONIZAÇÃO NEURAL", use_container_width=True):
         st.rerun()
-    st.caption(f"Último Pulso: {global_status.get('last_scan', 'Desconhecido')}")
 
 # --- PAINEL DE COMANDO ---
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Nós (Bairros)", len(config.get("districts", [])))
 col2.metric("Aliados Locais", len(global_status.get("allied_projects", [])))
-col3.metric("Tecnologias no Radar", len(radar_data))
-col4.metric("Status da Memória", "OTIMIZADA", delta="+20% Eficiência")
+col3.metric("Integrações Elite", "1 (OpenClaude)")
+col4.metric("Status da Memória", "OTIMIZADA")
 
 st.divider()
 
 # --- TABS DE OPERAÇÃO ---
-tab1, tab2, tab3 = st.tabs(["🔭 RADAR DE INOVAÇÃO (Global)", "🤝 REDE DE ALIADOS (Local)", "🌍 PULSO MUNDIAL"])
+tab1, tab2, tab3, tab4 = st.tabs(["🤖 OPENCLAUDE (Elite)", "🔭 RADAR DE INOVAÇÃO", "🤝 REDE DE ALIADOS", "🌍 PULSO MUNDIAL"])
 
 with tab1:
+    st.markdown("### 🧬 Terminal de Elite: OpenClaude Bridge")
+    st.write("Interaja com o cérebro Claude 3.5 Sonnet integrado diretamente na malha do MA-CityOS.")
+    
+    if "messages" not in st.session_state:
+        st.session_state.messages = []
+
+    for msg in st.session_state.messages:
+        with st.chat_message(msg["role"]):
+            st.markdown(msg["content"])
+
+    if prompt := st.chat_input("Dê uma ordem para o OpenClaude..."):
+        st.session_state.messages.append({"role": "user", "content": prompt})
+        with st.chat_message("user"):
+            st.markdown(prompt)
+            
+        with st.chat_message("assistant"):
+            with st.spinner("OpenClaude está processando na malha..."):
+                bridge = OpenClawBridge()
+                response = bridge.ask_agent(prompt)
+                st.markdown(response)
+                st.session_state.messages.append({"role": "assistant", "content": response})
+
+with tab2:
     st.markdown("### Tecnologias Complementares Descobertas no GitHub")
     if radar_data:
         cols = st.columns(3)
@@ -84,22 +98,18 @@ with tab1:
                     <h4 style="color:#00FF41; margin-bottom:5px;">{tech['name']}</h4>
                     <p style="font-size: 0.9em; color:#AAA;">⭐ {tech['stars']} Stars</p>
                     <p style="font-size: 0.8em; height: 60px; overflow: hidden;">{tech['desc'][:100]}...</p>
-                    <a href="{tech['url']}" target="_blank" style="color:#00FF41; text-decoration:none; border:1px solid #00FF41; padding:2px 8px; border-radius:3px;">Explorar Repositório</a>
+                    <a href="{tech['url']}" target="_blank" style="color:#00FF41; text-decoration:none; border:1px solid #00FF41; padding:2px 8px; border-radius:3px;">Explorar</a>
                 </div>
                 """, unsafe_allow_html=True)
-    else:
-        st.info("Varredura do Radar Global em andamento... Aguarde o próximo ciclo do Swarm.")
 
-with tab2:
-    st.markdown("### Seus Projetos Integrados à Malha")
+with tab3:
+    st.markdown("### Projetos Aliados Integrados")
     allies = global_status.get("allied_projects", [])
     if allies:
         df_allies = pd.DataFrame(allies)
         st.dataframe(df_allies[['name', 'desc']], use_container_width=True, hide_index=True)
-    else:
-        st.info("Nenhum aliado processado ainda.")
 
-with tab3:
+with tab4:
     st.markdown("### Fluxo de Dados: Inteligência Artificial")
     for item in news_feed:
         with st.container():

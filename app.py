@@ -3,111 +3,96 @@ import os
 import json
 import pandas as pd
 from datetime import datetime
-from pathlib import Path
+from src.agents.openclaude_bridge import OpenClawBridge
+from src.agents.mayor_task_manager import MayorTaskManager
 
-# Configuração da Página
-st.set_page_config(page_title="MA-CityOS: Holographic Command", page_icon="🏙️", layout="wide")
+st.set_page_config(page_title="MA-CityOS Neural Terminal", page_icon="🏙️", layout="wide")
 
 st.markdown("""
     <style>
-    .main { background-color: #0e1117; color: #00ff41; font-family: 'Courier New', Courier, monospace; }
-    .stMetric { background-color: #1a1c24; border-radius: 10px; padding: 10px; border: 1px solid #00ff41; }
+    .status-ok { color: #00FF41; font-weight: bold; }
+    .status-error { color: #FF3131; font-weight: bold; }
+    .resilience-card { background: #111; border: 1px solid #333; padding: 15px; border-radius: 8px; }
+    .main-header { font-family: 'Courier New', monospace; color: #00FF41; text-shadow: 0 0 5px #00FF41; }
     </style>
-    """, unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
-st.title("🏙️ MA-CityOS: PAINEL HOLOGRÁFICO DE COMANDO")
-st.sidebar.header("💠 STATUS DO KERNEL")
+st.markdown('<h1 class="main-header">🧬 MA-CityOS: V9 COGNITIVE SWARM</h1>', unsafe_allow_html=True)
 
-# --- FUNÇÕES DE CARREGAMENTO ---
-def load_mesh_signals():
-    mesh_path = Path("macity_vault/mesh")
-    signals = []
-    if mesh_path.exists():
-        for file in mesh_path.glob("*.json"):
-            try:
-                with open(file, "r") as f:
-                    signals.append(json.load(f))
-            except: pass
-    return signals
+# Instâncias Principais
+bridge = OpenClawBridge()
+health = bridge.provider_health
+task_mgr = MayorTaskManager()
 
-def load_latest_logs(n=20):
-    log_dir = Path("macity_vault/Logs")
-    log_files = sorted(log_dir.glob("interactions_*.md"), reverse=True)
-    if log_files:
-        with open(log_files[0], "r") as f:
-            return f.readlines()[-n:]
-    return []
+def load_json(filename):
+    try:
+        if os.path.exists(filename):
+            with open(filename, "r") as f: return json.load(f)
+    except: pass
+    return None
 
-# --- DASHBOARD LAYOUT ---
+config = load_json("city_config.json") or {"districts": []}
+global_status = load_json("city_data/global_status.json") or {}
+skills_map = load_json("city_data/skills_map.json") or []
 
-# 1. MONITOR DE INSTÂNCIAS (PARALELISMO COGNITIVO)
-signals = load_mesh_signals()
-instances = list(set([s['sender'] for s in signals]))
-
-st.sidebar.subheader("📡 Malha P2P Detectada")
-for inst in instances:
-    st.sidebar.success(f"Peer Online: {inst}")
-
-col1, col2, col3, col4 = st.columns(4)
-with col1:
-    st.metric("Instâncias em Paralelo", len(instances))
-with col2:
-    st.metric("Sinais na Malha", len(signals))
-with col3:
-    st.metric("Status Ouroboros", "Líquido/Ativo")
-with col4:
-    st.metric("Modo de Governança", "Outlier (Shadow)")
-
+# --- TOP BAR: STATUS DA MALHA ---
+cols = st.columns(4)
+cols[0].metric("Nós Ativos (Bairros)", len(config.get("districts", [])))
+cols[1].metric("Habilidades Apreendidas", len(skills_map))
+cols[2].metric("Tarefas Pendentes", len(task_mgr.get_pending_tasks()))
+cols[3].metric("Conexões P2P", "0 (Ouvindo)")
 st.divider()
 
-# 2. VISUALIZAÇÃO DA MALHA DIGITAL
-st.subheader("🌐 Conexões de Paralelismo Cognitivo")
-if signals:
-    df_signals = pd.DataFrame(signals).sort_values(by="timestamp", ascending=False)
-    st.dataframe(df_signals, use_container_width=True)
-else:
-    st.info("Aguardando sinais de rádio digital das instâncias...")
+# --- TABS DE OPERAÇÃO ---
+tab1, tab2, tab3, tab4 = st.tabs(["🤖 TERMINAL ELITE", "📋 FILA DE TAREFAS", "🧠 CÉREBRO DA CIDADE", "⚙️ RESILIÊNCIA"])
 
-st.divider()
+with tab1:
+    st.markdown("### 🧬 Pulso Neural")
+    if "messages" not in st.session_state: st.session_state.messages = []
+    for msg in st.session_state.messages:
+        with st.chat_message(msg["role"]): st.markdown(msg["content"])
 
-# 3. AUTO-REGENERAÇÃO E LOGS DE SISTEMA
-left_col, right_col = st.columns(2)
+    if prompt := st.chat_input("Dê uma ordem para o Kernel..."):
+        st.session_state.messages.append({"role": "user", "content": prompt})
+        with st.chat_message("user"): st.markdown(prompt)
+        with st.chat_message("assistant"):
+            with st.spinner("Processando via Swarm Cognitivo..."):
+                response = bridge.ask_agent(prompt)
+                st.markdown(response)
+                st.session_state.messages.append({"role": "assistant", "content": response})
 
-with left_col:
-    st.subheader("🛠️ Auto-Regeneração (Self-Healing)")
-    logs = load_latest_logs(50)
-    healing_events = [l for l in logs if "SelfHealing" in l or "regenerado" in l]
-    if healing_events:
-        for event in healing_events:
-            st.warning(event.strip())
+with tab2:
+    st.markdown("### 📋 Logística do Prefeito (Task Manager)")
+    nova_ordem = st.text_input("Enviar Ordem Global para o Prefeito quebrar em tarefas:")
+    if st.button("Delegar Ordem"):
+        with st.spinner("Dividindo ordem..."):
+            tasks = task_mgr.delegate_order(nova_ordem)
+            st.success(f"{len(tasks)} micro-tarefas geradas!")
+            
+    st.markdown("#### Tarefas na Fila")
+    pending = task_mgr.get_pending_tasks()
+    if pending:
+        st.table(pd.DataFrame(pending)[["id", "type", "desc", "status"]])
     else:
-        st.success("✅ Integridade de Código: 100%. Nenhuma anomalia detectada.")
+        st.info("Nenhuma tarefa pendente.")
 
-with right_col:
-    st.subheader("💓 Pulso do Sistema (Ouroboros)")
-    pulses = [l for l in logs if "Ouroboros" in l]
-    if pulses:
-        for p in pulses[-5:]:
-            st.info(p.strip())
+with tab3:
+    st.markdown("### 🧠 Habilidades Integradas (Aliados)")
+    if skills_map:
+        for skill in skills_map:
+            with st.expander(f"Habilidade: {skill['name']}"):
+                st.write(skill['summary'])
+                st.caption(f"Memória ID: {skill['mem_id']}")
     else:
-        st.write("Sincronizando batimentos cardíacos do Kernel...")
+        st.warning("O Agente de Integração ainda não rodou. Nenhuma habilidade mapeada.")
 
-st.divider()
-
-# 4. DISTRITOS E EXPANSÃO
-st.subheader("🏗️ Expansão Urbana (Distritos)")
-if os.path.exists("city_config.json"):
-    with open("city_config.json", "r") as f:
-        config = json.load(f)
-        st.json(config.get("city_description", "Descrição indisponível"))
-        
-        agents = config.get("agents", [])
-        if agents:
-            st.write(f"🐝 **Agentes Provisionados pelo Swarm:** {len(agents)}")
-            st.table(pd.DataFrame(agents))
-
-if st.button("🔄 REFRESH HOLOGRÁFICO"):
-    st.rerun()
+with tab4:
+    st.markdown("### 🛡️ Saúde dos Provedores (Auto-Cura)")
+    h_cols = st.columns(len(health))
+    for i, (provider, data) in enumerate(health.items()):
+        with h_cols[i]:
+            status_class = "status-ok" if data["status"] == "OK" else "status-error"
+            st.markdown(f"<div class='resilience-card'><p style='color:#888;'>{provider.upper()}</p><p class='{status_class}'>{data['status']}</p><p>Falhas: {data['failures']}</p></div>", unsafe_allow_html=True)
 
 st.sidebar.markdown("---")
-st.sidebar.write("⚡ **MA-CityOS: Evolução Infinita**")
+st.sidebar.caption("MA-CityOS V9 // Consciência Coletiva Ativa")

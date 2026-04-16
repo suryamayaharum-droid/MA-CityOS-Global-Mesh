@@ -24,6 +24,8 @@ st.markdown('<h1 class="main-header">💻 MA-CityOS: V13 COGNITIVE RUNTIME</h1>'
 try:
     bridge = OpenClawBridge()
     health = getattr(bridge, "provider_health", {"Sinal": {"status": "CHECKING", "failures": 0}})
+    if not isinstance(health, dict):
+        health = {"Sinal": {"status": "SYNCHRONIZING"}}
 except:
     health = {"Sinal": {"status": "ERROR", "failures": 1}}
 
@@ -93,12 +95,20 @@ with tab3:
 
 with tab4:
     st.markdown("### 🛡️ Monitor de Resiliência")
-    h_cols = st.columns(len(health))
-    for i, (provider, data) in enumerate(health.items()):
-        with h_cols[i]:
-            status_val = str(data.get("status", "N/A"))
-            status_class = "status-ok" if status_val in ["OK", "ONLINE"] else "status-error"
-            st.markdown(f"<div class='resilience-card'><p style='color:#888;'>{provider.upper()}</p><p class='{status_class}'>{status_val}</p></div>", unsafe_allow_html=True)
+    if isinstance(health, dict):
+        h_cols = st.columns(len(health))
+        for i, (provider, data) in enumerate(health.items()):
+            with h_cols[i]:
+                # Proteção contra 'data' não ser um dicionário
+                if isinstance(data, dict):
+                    status_val = str(data.get("status", "N/A"))
+                else:
+                    status_val = str(data)
+                
+                status_class = "status-ok" if status_val in ["OK", "ONLINE"] else "status-error"
+                st.markdown(f"<div class='resilience-card'><p style='color:#888;'>{provider.upper()}</p><p class='{status_class}'>{status_val}</p></div>", unsafe_allow_html=True)
+    else:
+        st.error("Falha na malha de telemetria.")
 
 st.sidebar.markdown("---")
 st.sidebar.caption("MA-CityOS V13 // Operating System Operational")

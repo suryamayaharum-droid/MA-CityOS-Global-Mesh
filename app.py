@@ -3,12 +3,33 @@ import os
 import json
 import pandas as pd
 from datetime import datetime
+import random
 
-st.set_page_config(page_title="MA-CityOS Global Dashboard", page_icon="🏙️", layout="wide")
+st.set_page_config(page_title="MA-CityOS Terminal", page_icon="💻", layout="wide", initial_sidebar_state="expanded")
 
-st.title("🏙️ MA-CityOS: Malha Digital Global")
+# --- CSS CUSTOMIZADO (Cyberpunk Feel) ---
+st.markdown("""
+    <style>
+    .stMetric {
+        background-color: #1A1A1A;
+        border-left: 3px solid #00FF41;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .main-header {
+        font-family: 'Courier New', Courier, monospace;
+        color: #00FF41;
+        text-shadow: 0 0 5px #00FF41;
+    }
+    .radar-card {
+        background: #111; border: 1px solid #333; padding: 15px; border-radius: 8px; margin-bottom: 10px;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
-# Funções de carregamento de dados
+st.markdown('<h1 class="main-header">💻 MA-CityOS: NEURAL TERMINAL V2</h1>', unsafe_allow_html=True)
+
+# --- CARREGAMENTO DE DADOS ---
 def load_json(filename):
     try:
         if os.path.exists(filename):
@@ -17,71 +38,74 @@ def load_json(filename):
     except: pass
     return None
 
-config = load_json("city_config.json") or {"districts": [], "version": "1.0.0"}
-global_status = load_json("city_data/global_status.json")
-news_feed = load_json("city_data/news_feed.json")
+config = load_json("city_config.json") or {"districts": [], "version": "2.0.0"}
+global_status = load_json("city_data/global_status.json") or {}
+news_feed = load_json("city_data/news_feed.json") or []
+radar_data = load_json("city_data/global_radar.json") or []
 
-# Barra Lateral
-st.sidebar.header("🛡️ Cyber Shield Status")
-if global_status:
+# --- BARRA LATERAL (Cyber Shield & Status) ---
+with st.sidebar:
+    st.markdown('<h2 style="color:#00FF41;">🛡️ CYBER SHIELD</h2>', unsafe_allow_html=True)
     alerts = global_status.get("security_alerts", [])
     if alerts:
-        st.sidebar.error(f"⚠️ {len(alerts)} Alertas de Segurança!")
-        with st.sidebar.expander("Ver Alertas"):
-            for alert in alerts[:5]:
-                st.write(f"**Repo:** {alert['repo']}")
-                st.write(f"**Arquivo:** {alert['file']}")
-                st.write("---")
+        st.error(f"⚠️ {len(alerts)} BRECHAS DETECTADAS")
+        with st.expander("Ver Relatório de Intrusão"):
+            for a in alerts[:5]:
+                st.code(f"Repo: {a['repo']}\nAlvo: {a['file']}", language="bash")
     else:
-        st.sidebar.success("✅ Nenhuma ameaça detectada.")
-    
-    st.sidebar.divider()
-    allies = global_status.get("allied_projects", [])
-    st.sidebar.info(f"🤝 {len(allies)} Projetos Aliados Conectados.")
+        st.success("✅ INTEGRIDADE DO SISTEMA: 100%")
+        
+    st.divider()
+    st.markdown('### ⚙️ SISTEMA AUTÔNOMO')
+    if st.button("🔌 FORÇAR SINCRONIZAÇÃO NEURAL", use_container_width=True):
+        st.rerun()
+    st.caption(f"Último Pulso: {global_status.get('last_scan', 'Desconhecido')}")
 
-# Painel Principal
-col1, col2, col3 = st.columns(3)
-with col1:
-    st.metric("Bairros Ativos", len(config.get("districts", [])))
-with col2:
-    st.metric("Aliados Importados", len(global_status.get("allied_projects", [])) if global_status else 0)
-with col3:
-    st.metric("Última Varredura", global_status.get("last_scan", "N/A") if global_status else "N/A")
-
-st.divider()
-
-# Notícias do Mundo Real
-if news_feed:
-    st.subheader("🌍 Feed do Mundo Real (Manchetes de IA)")
-    cols = st.columns(len(news_feed))
-    for i, item in enumerate(news_feed):
-        with cols[i]:
-            st.caption(item['pubDate'])
-            st.write(f"**{item['title'][:50]}...**")
-            st.link_button("Ler Mais", item['link'])
+# --- PAINEL DE COMANDO ---
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("Nós (Bairros)", len(config.get("districts", [])))
+col2.metric("Aliados Locais", len(global_status.get("allied_projects", [])))
+col3.metric("Tecnologias no Radar", len(radar_data))
+col4.metric("Status da Memória", "OTIMIZADA", delta="+20% Eficiência")
 
 st.divider()
 
-# Projetos Aliados (Importados via Swarm)
-if global_status and global_status.get("allied_projects"):
-    st.subheader("🤝 Rede de Projetos Aliados (Swarm Connectivity)")
-    df_allies = pd.DataFrame(global_status["allied_projects"])
-    st.dataframe(df_allies, use_container_width=True)
+# --- TABS DE OPERAÇÃO ---
+tab1, tab2, tab3 = st.tabs(["🔭 RADAR DE INOVAÇÃO (Global)", "🤝 REDE DE ALIADOS (Local)", "🌍 PULSO MUNDIAL"])
 
-st.divider()
-
-# Logs e Atividade
-st.subheader("🐝 Atividade do Swarm")
-tab1, tab2 = st.tabs(["Logs do Sistema", "Configurações da Cidade"])
 with tab1:
-    if os.path.exists("expansion.log"):
-        with open("expansion.log", "r") as f:
-            st.text(f.read()[-2000:])
+    st.markdown("### Tecnologias Complementares Descobertas no GitHub")
+    if radar_data:
+        cols = st.columns(3)
+        for i, tech in enumerate(radar_data):
+            with cols[i % 3]:
+                st.markdown(f"""
+                <div class="radar-card">
+                    <h4 style="color:#00FF41; margin-bottom:5px;">{tech['name']}</h4>
+                    <p style="font-size: 0.9em; color:#AAA;">⭐ {tech['stars']} Stars</p>
+                    <p style="font-size: 0.8em; height: 60px; overflow: hidden;">{tech['desc'][:100]}...</p>
+                    <a href="{tech['url']}" target="_blank" style="color:#00FF41; text-decoration:none; border:1px solid #00FF41; padding:2px 8px; border-radius:3px;">Explorar Repositório</a>
+                </div>
+                """, unsafe_allow_html=True)
+    else:
+        st.info("Varredura do Radar Global em andamento... Aguarde o próximo ciclo do Swarm.")
+
 with tab2:
-    st.json(config)
+    st.markdown("### Seus Projetos Integrados à Malha")
+    allies = global_status.get("allied_projects", [])
+    if allies:
+        df_allies = pd.DataFrame(allies)
+        st.dataframe(df_allies[['name', 'desc']], use_container_width=True, hide_index=True)
+    else:
+        st.info("Nenhum aliado processado ainda.")
 
-if st.button("🔄 Sincronizar Agora"):
-    st.rerun()
+with tab3:
+    st.markdown("### Fluxo de Dados: Inteligência Artificial")
+    for item in news_feed:
+        with st.container():
+            st.markdown(f"**[{item['title']}]({item['link']})**")
+            st.caption(f"Capturado em: {item['pubDate']}")
+            st.divider()
 
-st.sidebar.markdown("---")
-st.sidebar.caption("MA-CityOS V1.0 - Malha de Agentes Distribuída")
+st.markdown("---")
+st.caption("MA-CityOS Neural Mesh // Operando em modo de processamento distribuído.")

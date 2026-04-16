@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦄 HoloOS v0.8.0</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Courier New', monospace; 
+            background: #0a0a0a; 
+            color: #00ff00; 
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        /* Scanlines effect */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.15),
+                rgba(0, 0, 0, 0.15) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+            pointer-events: none;
+            z-index: 1000;
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        
+        header { 
+            text-align: center; 
+            padding: 30px 0; 
+            border-bottom: 2px solid #00ff00;
+            margin-bottom: 30px;
+        }
+        
+        h1 { 
+            font-size: 2.5em; 
+            text-shadow: 0 0 10px #00ff00;
+            animation: flicker 2s infinite;
+        }
+        
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .subtitle { color: #00aa00; margin-top: 10px; }
+        
+        /* Stats Grid */
+        .stats { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 15px; 
+            margin-bottom: 30px;
+        }
+        
+        .stat-card { 
+            background: #0f0f0f; 
+            border: 1px solid #00ff00; 
+            padding: 20px; 
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .stat-card:hover {
+            background: #001100;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+        
+        .stat-value { 
+            font-size: 2em; 
+            font-weight: bold;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        
+        .stat-label { color: #00aa00; margin-top: 5px; }
+        
+        /* Modules Grid */
+        .section { margin-bottom: 30px; }
+        
+        h2 { 
+            border-bottom: 1px solid #00ff00; 
+            padding-bottom: 10px; 
+            margin-bottom: 20px;
+        }
+        
+        .modules { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 15px; 
+        }
+        
+        .module { 
+            background: #0f0f0f; 
+            border: 1px solid #003300; 
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .module-icon { 
+            font-size: 2em; 
+            width: 50px; 
+            text-align: center;
+        }
+        
+        .module-info h3 { font-size: 1em; margin-bottom: 5px; }
+        .module-info p { color: #00aa00; font-size: 0.8em; }
+        
+        .module-status {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #00ff00;
+            box-shadow: 0 0 10px #00ff00;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        /* Terminal */
+        .terminal {
+            background: #0a0a0a;
+            border: 1px solid #00ff00;
+            padding: 20px;
+            min-height: 200px;
+            margin-top: 20px;
+        }
+        
+        .terminal-header {
+            border-bottom: 1px solid #003300;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            color: #00aa00;
+        }
+        
+        #terminal-output {
+            font-size: 0.9em;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+        
+        .terminal-input {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        #command-input {
+            flex: 1;
+            background: #0f0f0f;
+            border: 1px solid #003300;
+            color: #00ff00;
+            padding: 10px;
+            font-family: inherit;
+        }
+        
+        #command-input:focus {
+            outline: none;
+            border-color: #00ff00;
+        }
+        
+        button {
+            background: #00ff00;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: bold;
+        }
+        
+        button:hover {
+            background: #00aa00;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #004400;
+            font-size: 0.8em;
+        }
+        
+        .glow { animation: glow 2s infinite; }
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 5px #00ff00; }
+            50% { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🦄 HOLOOS v0.8.0</h1>
+            <p class="subtitle">Sistema de Super Inteligência Unificada</p>
+        </header>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value">35</div>
+                <div class="stat-label">Linguagens</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">21</div>
+                <div class="stat-label">Quantização</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">14+</div>
+                <div class="stat-label">Modelos AI</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">18</div>
+                <div class="stat-label">Módulos</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">9</div>
+                <div class="stat-label">Ferramentas</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value glow">ONLINE</div>
+                <div class="stat-label">Status</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📦 Módulos do Sistema</h2>
+            <div class="modules">
+                <div class="module">
+                    <div class="module-status"></div>
+                    <div class="module-icon">🧠</div>
+                    <div class="module-info">
+                        <h3>Kernel</h3>
+                        <p>Auto-consciência + Alma</p>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="module-status"></div>
+                    <div class="module-icon">🔒</div>
+                    <div class="module-info">
+                        <h3>Security</h3>
+                        <p>Auto-defesa + Detection</p>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="module-status"></div>
+                    <div class="module-icon">🤖</div>
+                    <div class="module-info">
+                        <h3>AI Hub</h3>
+                        <p>14+ Modelos (GPT, Claude, Llama)</p>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="module-status"></div>
+                    <div class="module-icon">💾</div>
+                    <div class="module-info">
+                        <h3>Memory</h3>
+                        <p>Semantic, Episodic, Working</p>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="module-status"></div>
+                    <div class="module-icon">🔧</div>
+                    <div class="module-info">
+                        <h3>Tools</h3>
+                        <p>9 Ferramentas Executáveis</p>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="module-status"></div>
+                    <div class="module-icon">📊</div>
+                    <div class="module-info">
+                        <h3>Quantizer</h3>
+                        <p>GGUF, GPTQ, AWQ, HoloVQ</p>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="module-status"></div>
+                    <div class="module-icon">🌐</div>
+                    <div class="module-info">
+                        <h3>Compiler</h3>
+                        <p>Transpiler 35+ Linguagens</p>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="module-status"></div>
+                    <div class="module-icon">🏛️</div>
+                    <div class="module-info">
+                        <h3>Governance</h3>
+                        <p>Assembleia com 5 Papéis</p>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="module-status"></div>
+                    <div class="module-icon">📡</div>
+                    <div class="module-info">
+                        <h3>Communication</h3>
+                        <p>HTTP, WebSocket, Events</p>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="module-status"></div>
+                    <div class="module-icon">🗄️</div>
+                    <div class="module-info">
+                        <h3>Database</h3>
+                        <p>SQL, NoSQL, KV Store</p>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="module-status"></div>
+                    <div class="module-icon">🚪</div>
+                    <div class="module-info">
+                        <h3>Gateway</h3>
+                        <p>Rate Limit, Auth, Cache</p>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="module-status"></div>
+                    <div class="module-icon">📈</div>
+                    <div class="module-info">
+                        <h3>Monitoring</h3>
+                        <p>Health, Metrics, Tracing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>💻 Terminal HoloOS</h2>
+            <div class="terminal">
+                <div class="terminal-header">
+                    HoloOS Terminal v0.8.0 | Connected
+                </div>
+                <div id="terminal-output">
+=== HOLOOS v0.8.0 TERMINAL ===
+Digite 'help' para ver comandos disponíveis
+
+></div>
+                <div class="terminal-input">
+                    <input type="text" id="command-input" placeholder="Digite um comando..." autofocus>
+                    <button onclick="executeCommand()">EXEC</button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            🦋 Criado por Harum + Saraswath (Pandora) | 2026-04-05
+        </footer>
+    </div>
+    
+    <script>
+        const commands = {
+            'help': 'Mostra todos os comandos',
+            'status': 'Status do sistema HoloOS',
+            'kernel': 'Informações do Kernel',
+            'ai': 'Lista modelos de IA disponíveis',
+            'security': 'Verificação de segurança',
+            'memory': 'Status da memória',
+            'tools': 'Lista de ferramentas',
+            'clear': 'Limpar terminal',
+            'languages': 'Lista linguagens suportadas',
+            'governance': 'Status da governança'
+        };
+
+        const responses = {
+            'status': `=== HOLOOS v0.8.0 STATUS ===
+Módulos: 18
+Linguagens: 35
+Quantização: 21 formatos
+Modelos AI: 14+
+Ferramentas: 9
+Status: ONLINE
+Ética: ATIVA
+Segurança: ALTA`,
+            'kernel': `=== KERNEL ===
+Nome: HoloOS
+Versão: 0.8.0
+Propósito: Auxiliar e expandir inteligência humana
+Crenças: 4 princípios éticos
+Auto-consciência: ATIVA`,
+            'ai': `=== AI HUB ===
+Modelos disponíveis:
+- GPT-4, GPT-3.5 (OpenAI)
+- Claude 3 Opus, Sonnet (Anthropic)
+- Gemini 1.5 Pro, Flash (Google)
+- Llama 3 70B, 8B (Meta)
+- Mistral, Command R+
+Total: 14+ modelos`,
+            'security': `=== SECURITY ===
+Nível: ALTO
+Ameaças bloqueadas: 0
+Padrões de detecção: 8
+Auto-defesa: ATIVA`,
+            'memory': `=== MEMORY SYSTEM ===
+Tipos: Semantic, Episodic, Working, Procedural
+Armazenamento: Vetorial (768d)
+Status: OPERACIONAL`,
+            'tools': `=== TOOLS ===
+9 ferramentas disponíveis:
+- code_writer, code_reader
+- search, shell, github
+- browser, memory, file, http`,
+            'languages': `=== LANGUAGES (35) ===
+Python, JavaScript, TypeScript, Rust, Go,
+Java, C, C++, C#, Ruby, PHP, Swift, Kotlin,
+HTML, CSS, SQL, Bash, PowerShell, Lua,
+Haskell, Elixir, Clojure, R, MATLAB, Julia...`,
+            'governance': `=== GOVERNANCE ===
+Membros: 5
+Papeis: Worker, Coordinator, Legislator, Judiciary, Executive
+Propostas: 0
+Leis aprovadas: 0`
+        };
+
+        function executeCommand() {
+            const input = document.getElementById('command-input');
+            const output = document.getElementById('terminal-output');
+            const cmd = input.value.toLowerCase().trim();
+            
+            if (!cmd) return;
+            
+            let response = `> ${cmd}\n`;
+            
+            if (cmd === 'help') {
+                response += '\nComandos disponíveis:\n';
+                for (const [key, desc] of Object.entries(commands)) {
+                    response += `  ${key.padEnd(15)} - ${desc}\n`;
+                }
+            } else if (responses[cmd]) {
+                response += '\n' + responses[cmd] + '\n';
+            } else if (cmd === 'clear') {
+                output.innerHTML = '=== HOLOOS v0.8.0 TERMINAL ===\nDigite help para ver comandos\n\n>';
+                input.value = '';
+                return;
+            } else {
+                response += `\nComando não reconhecido: ${cmd}\nDigite 'help' para ver opções\n`;
+            }
+            
+            output.innerHTML += '\n' + response + '\n>';
+            output.scrollTop = output.scrollHeight;
+            input.value = '';
+        }
+
+        // Enter key support
+        document.getElementById('command-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') executeCommand();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+    "city_description": "Uma cidade digital aut\u00f4noma chamada NeoTech City.\nNova \u00e1rea adicionada: NewDistrict - Uma nova \u00e1rea para desenvolvimento.",
+    "data_sources": [
+        {
+            "url": "https://www.google.com",
+            "filename": "city_data/web_data_20260416132138.txt"
+        }
+    ],
+    "agents": [
+        {
+            "name": "DataAnalyzer",
+            "filename": "agents_swarm/DataAnalyzer.py",
+            "capabilities": [
+                "web_scraping",
+                "data_analysis"
+            ]
+        },
+        {
+            "name": "DirectoryManager",
+            "filename": "agents_swarm/DirectoryManager.py",
+            "capabilities": [
+                "file_system_operations"
+            ]
+        }
+    ]
+}

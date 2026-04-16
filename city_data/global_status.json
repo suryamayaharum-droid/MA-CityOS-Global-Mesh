@@ -1,0 +1,319 @@
+{
+    "last_scan": "2026-04-16 15:03:31",
+    "security_alerts": [
+        {
+            "repo": "ai23",
+            "file": ".github/workflows/validate-npm-token.yml",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/.github/workflows/validate-npm-token.yml"
+        },
+        {
+            "repo": "ai23",
+            "file": "content/cookbook/01-next/77-track-agent-token-usage.mdx",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/content/cookbook/01-next/77-track-agent-token-usage.mdx"
+        },
+        {
+            "repo": "ai23",
+            "file": "content/cookbook/05-node/45-stream-object-record-token-usage.mdx",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/content/cookbook/05-node/45-stream-object-record-token-usage.mdx"
+        },
+        {
+            "repo": "ai23",
+            "file": "content/cookbook/20-rsc/92-stream-ui-record-token-usage.mdx",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/content/cookbook/20-rsc/92-stream-ui-record-token-usage.mdx"
+        },
+        {
+            "repo": "ai23",
+            "file": "content/docs/07-reference/05-ai-sdk-errors/ai-load-api-key-error.mdx",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/content/docs/07-reference/05-ai-sdk-errors/ai-load-api-key-error.mdx"
+        },
+        {
+            "repo": "ai23",
+            "file": "content/providers/03-community-providers/33-portkey.mdx",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/content/providers/03-community-providers/33-portkey.mdx"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/ai-e2e-next/.env.local.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/ai-e2e-next/.env.local.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/ai-functions/.env.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/ai-functions/.env.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/ai-functions/src/generate-text/amazon/bedrock-api-key.ts",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/ai-functions/src/generate-text/amazon/bedrock-api-key.ts"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/ai-functions/src/generate-text/anthropic/auth-token.ts",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/ai-functions/src/generate-text/anthropic/auth-token.ts"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/ai-functions/src/stream-text/openai/output-object-token-usage.ts",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/ai-functions/src/stream-text/openai/output-object-token-usage.ts"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/express/.env.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/express/.env.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/fastify/.env.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/fastify/.env.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/hono/.env.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/hono/.env.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/mcp/.env.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/mcp/.env.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/nest/.env.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/nest/.env.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/next-agent/.env.local.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-agent/.env.local.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/next-fastapi/.env.local.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-fastapi/.env.local.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/next-google-vertex/.env.local.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-google-vertex/.env.local.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/next-langchain/.env.local.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-langchain/.env.local.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/next-openai-kasada-bot-protection/.env.local.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-openai-kasada-bot-protection/.env.local.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/next-openai-pages/.env.local.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-openai-pages/.env.local.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/next-openai-telemetry-sentry/.env.local.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-openai-telemetry-sentry/.env.local.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/next-openai-telemetry/.env.local.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-openai-telemetry/.env.local.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/next-openai-upstash-rate-limits/.env.local.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-openai-upstash-rate-limits/.env.local.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/next/.env.local.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next/.env.local.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/node-http-server/.env.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/node-http-server/.env.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "examples/nuxt-openai/.env.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/nuxt-openai/.env.example"
+        },
+        {
+            "repo": "ai23",
+            "file": "packages/codemod/src/codemods/v4/replace-token-usage-types.ts",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/codemods/v4/replace-token-usage-types.ts"
+        },
+        {
+            "repo": "ai23",
+            "file": "packages/codemod/src/codemods/v5/replace-usage-token-properties.ts",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/codemods/v5/replace-usage-token-properties.ts"
+        },
+        {
+            "repo": "ai23",
+            "file": "packages/codemod/src/codemods/v6/rename-vertex-provider-metadata-key.ts",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/codemods/v6/rename-vertex-provider-metadata-key.ts"
+        },
+        {
+            "repo": "ai23",
+            "file": "packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key-google-only.input.ts",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key-google-only.input.ts"
+        },
+        {
+            "repo": "ai23",
+            "file": "packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key-google-only.output.ts",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key-google-only.output.ts"
+        },
+        {
+            "repo": "ai23",
+            "file": "packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key.input.ts",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key.input.ts"
+        },
+        {
+            "repo": "ai23",
+            "file": "packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key.output.ts",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key.output.ts"
+        },
+        {
+            "repo": "ai23",
+            "file": "packages/codemod/src/test/__testfixtures__/replace-token-usage-types.input.ts",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/test/__testfixtures__/replace-token-usage-types.input.ts"
+        },
+        {
+            "repo": "ai23",
+            "file": "packages/codemod/src/test/__testfixtures__/replace-token-usage-types.output.ts",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/test/__testfixtures__/replace-token-usage-types.output.ts"
+        },
+        {
+            "repo": "ai23",
+            "file": "packages/codemod/src/test/rename-vertex-provider-metadata-key.test.ts",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/test/rename-vertex-provider-metadata-key.test.ts"
+        },
+        {
+            "repo": "ai23",
+            "file": "packages/codemod/src/test/replace-token-usage-types.test.ts",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/test/replace-token-usage-types.test.ts"
+        },
+        {
+            "repo": "ai23",
+            "file": "packages/provider-utils/src/load-api-key.ts",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/provider-utils/src/load-api-key.ts"
+        },
+        {
+            "repo": "ai23",
+            "file": "packages/provider/src/errors/load-api-key-error.ts",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/provider/src/errors/load-api-key-error.ts"
+        },
+        {
+            "repo": "chatbot",
+            "file": ".env.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/chatbot/blob/main/.env.example"
+        },
+        {
+            "repo": "deer-flow",
+            "file": ".env.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/deer-flow/blob/main/.env.example"
+        },
+        {
+            "repo": "deer-flow",
+            "file": "frontend/.env.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/deer-flow/blob/main/frontend/.env.example"
+        },
+        {
+            "repo": "deer-flow",
+            "file": "frontend/src/components/workspace/token-usage-indicator.tsx",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/deer-flow/blob/main/frontend/src/components/workspace/token-usage-indicator.tsx"
+        },
+        {
+            "repo": "hermes-agent",
+            "file": ".env.example",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/hermes-agent/blob/main/.env.example"
+        },
+        {
+            "repo": "hermes-agent",
+            "file": "tests/hermes_cli/test_profile_export_credentials.py",
+            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
+            "url": "https://github.com/suryamayaharum-droid/hermes-agent/blob/main/tests/hermes_cli/test_profile_export_credentials.py"
+        }
+    ],
+    "allied_projects": [
+        {
+            "name": "ai23",
+            "url": "https://github.com/suryamayaharum-droid/ai23",
+            "desc": "The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents "
+        },
+        {
+            "name": "deer-flow",
+            "url": "https://github.com/suryamayaharum-droid/deer-flow",
+            "desc": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours."
+        },
+        {
+            "name": "hermes-agent",
+            "url": "https://github.com/suryamayaharum-droid/hermes-agent",
+            "desc": "The agent that grows with you"
+        },
+        {
+            "name": "holoos",
+            "url": "https://github.com/suryamayaharum-droid/holoos",
+            "desc": "HoloOS - Sistema de Super Intelig\u00eancia Unificada v0.8.0"
+        },
+        {
+            "name": "MA-CityOS-Core",
+            "url": "https://github.com/suryamayaharum-droid/MA-CityOS-Core",
+            "desc": "O N\u00facleo e Documenta\u00e7\u00e3o do Sistema Operacional Meta Agentes (MA-CityOS)"
+        },
+        {
+            "name": "mempalace",
+            "url": "https://github.com/suryamayaharum-droid/mempalace",
+            "desc": "The highest-scoring AI memory system ever benchmarked. And it's free."
+        }
+    ]
+}

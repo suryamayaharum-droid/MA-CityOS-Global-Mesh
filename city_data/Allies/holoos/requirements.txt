@@ -1,0 +1,1 @@
+# HoloOS - zero external dependencies

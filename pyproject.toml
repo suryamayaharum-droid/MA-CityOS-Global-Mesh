@@ -1,0 +1,16 @@
+[project]
+name = "macityos"
+version = "0.1.0"
+description = "Meta Agents City OS - Um sistema operacional autogerido de enxames de IA."
+authors = [
+    { name = "Suryamaya Harum", email = "macityos@core.mesh" },
+    { name = "Gemini CLI", email = "cli@gemini.core" }
+]
+dependencies = [
+    "streamlit>=1.30.0",
+    "pandas>=2.0.0",
+    "PyGithub>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "chromadb>=0.4.0",
+    "cryptography>=42.0.0"
+]

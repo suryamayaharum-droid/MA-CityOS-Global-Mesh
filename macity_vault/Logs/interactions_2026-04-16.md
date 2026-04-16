@@ -2954,3 +2954,7 @@ Iniciando tarefa distribuída: AutoExpansão_Inicial_Sub_0
 Iniciando tarefa distribuída: AutoExpansão_Inicial_Sub_1
 
 ---
+### [2026-04-16T16:20:36.160917] GalacticMiner -> #mining_error
+Erro de conexão com GitHub: 401 {"message": "Bad credentials", "documentation_url": "https://docs.github.com/rest", "status": "401"}
+
+---

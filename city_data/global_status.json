@@ -1,287 +1,3785 @@
 {
-    "last_scan": "2026-04-16 15:03:31",
+    "last_scan": "2026-04-16 16:22:06",
     "security_alerts": [
         {
             "repo": "ai23",
             "file": ".github/workflows/validate-npm-token.yml",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/.github/workflows/validate-npm-token.yml"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "content/cookbook/01-next/77-track-agent-token-usage.mdx",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/content/cookbook/01-next/77-track-agent-token-usage.mdx"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "content/cookbook/05-node/45-stream-object-record-token-usage.mdx",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/content/cookbook/05-node/45-stream-object-record-token-usage.mdx"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "content/cookbook/20-rsc/92-stream-ui-record-token-usage.mdx",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/content/cookbook/20-rsc/92-stream-ui-record-token-usage.mdx"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "content/docs/07-reference/05-ai-sdk-errors/ai-load-api-key-error.mdx",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/content/docs/07-reference/05-ai-sdk-errors/ai-load-api-key-error.mdx"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "content/providers/03-community-providers/33-portkey.mdx",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/content/providers/03-community-providers/33-portkey.mdx"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/ai-e2e-next/.env.local.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/ai-e2e-next/.env.local.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/ai-functions/.env.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/ai-functions/.env.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/ai-functions/src/generate-text/amazon/bedrock-api-key.ts",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/ai-functions/src/generate-text/amazon/bedrock-api-key.ts"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/ai-functions/src/generate-text/anthropic/auth-token.ts",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/ai-functions/src/generate-text/anthropic/auth-token.ts"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/ai-functions/src/stream-text/openai/output-object-token-usage.ts",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/ai-functions/src/stream-text/openai/output-object-token-usage.ts"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/express/.env.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/express/.env.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/fastify/.env.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/fastify/.env.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/hono/.env.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/hono/.env.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/mcp/.env.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/mcp/.env.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/nest/.env.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/nest/.env.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/next-agent/.env.local.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-agent/.env.local.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/next-fastapi/.env.local.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-fastapi/.env.local.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/next-google-vertex/.env.local.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-google-vertex/.env.local.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/next-langchain/.env.local.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-langchain/.env.local.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/next-openai-kasada-bot-protection/.env.local.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-openai-kasada-bot-protection/.env.local.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/next-openai-pages/.env.local.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-openai-pages/.env.local.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/next-openai-telemetry-sentry/.env.local.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-openai-telemetry-sentry/.env.local.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/next-openai-telemetry/.env.local.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-openai-telemetry/.env.local.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/next-openai-upstash-rate-limits/.env.local.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next-openai-upstash-rate-limits/.env.local.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/next/.env.local.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/next/.env.local.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/node-http-server/.env.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/node-http-server/.env.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "examples/nuxt-openai/.env.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/examples/nuxt-openai/.env.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "packages/codemod/src/codemods/v4/replace-token-usage-types.ts",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/codemods/v4/replace-token-usage-types.ts"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "packages/codemod/src/codemods/v5/replace-usage-token-properties.ts",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/codemods/v5/replace-usage-token-properties.ts"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "packages/codemod/src/codemods/v6/rename-vertex-provider-metadata-key.ts",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/codemods/v6/rename-vertex-provider-metadata-key.ts"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key-google-only.input.ts",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key-google-only.input.ts"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key-google-only.output.ts",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key-google-only.output.ts"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key.input.ts",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key.input.ts"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key.output.ts",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key.output.ts"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "packages/codemod/src/test/__testfixtures__/replace-token-usage-types.input.ts",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/test/__testfixtures__/replace-token-usage-types.input.ts"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "packages/codemod/src/test/__testfixtures__/replace-token-usage-types.output.ts",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/test/__testfixtures__/replace-token-usage-types.output.ts"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "packages/codemod/src/test/rename-vertex-provider-metadata-key.test.ts",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/test/rename-vertex-provider-metadata-key.test.ts"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "packages/codemod/src/test/replace-token-usage-types.test.ts",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/codemod/src/test/replace-token-usage-types.test.ts"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "packages/provider-utils/src/load-api-key.ts",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/provider-utils/src/load-api-key.ts"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "ai23",
             "file": "packages/provider/src/errors/load-api-key-error.ts",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/ai23/blob/main/packages/provider/src/errors/load-api-key-error.ts"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "chatbot",
             "file": ".env.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/chatbot/blob/main/.env.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "deer-flow",
             "file": ".env.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/deer-flow/blob/main/.env.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "deer-flow",
             "file": "frontend/.env.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/deer-flow/blob/main/frontend/.env.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "deer-flow",
             "file": "frontend/src/components/workspace/token-usage-indicator.tsx",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/deer-flow/blob/main/frontend/src/components/workspace/token-usage-indicator.tsx"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "hermes-agent",
             "file": ".env.example",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/hermes-agent/blob/main/.env.example"
+            "risk": "CR\u00cdTICO"
         },
         {
             "repo": "hermes-agent",
             "file": "tests/hermes_cli/test_profile_export_credentials.py",
-            "risk": "CR\u00cdTICO - Poss\u00edvel vazamento de credencial",
-            "url": "https://github.com/suryamayaharum-droid/hermes-agent/blob/main/tests/hermes_cli/test_profile_export_credentials.py"
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/.github/workflows/validate-npm-token.yml",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/content/cookbook/01-next/77-track-agent-token-usage.mdx",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/content/cookbook/05-node/45-stream-object-record-token-usage.mdx",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/content/cookbook/20-rsc/92-stream-ui-record-token-usage.mdx",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/content/docs/07-reference/05-ai-sdk-errors/ai-load-api-key-error.mdx",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/content/providers/03-community-providers/33-portkey.mdx",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/ai-e2e-next/.env.local.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/ai-functions/.env.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/ai-functions/src/generate-text/amazon/bedrock-api-key.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/ai-functions/src/generate-text/anthropic/auth-token.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/ai-functions/src/stream-text/openai/output-object-token-usage.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/express/.env.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/fastify/.env.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/hono/.env.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/mcp/.env.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/nest/.env.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/next-agent/.env.local.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/next-fastapi/.env.local.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/next-google-vertex/.env.local.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/next-langchain/.env.local.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/next-openai-kasada-bot-protection/.env.local.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/next-openai-pages/.env.local.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/next-openai-telemetry-sentry/.env.local.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/next-openai-telemetry/.env.local.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/next-openai-upstash-rate-limits/.env.local.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/next/.env.local.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/node-http-server/.env.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/examples/nuxt-openai/.env.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/packages/codemod/src/codemods/v4/replace-token-usage-types.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/packages/codemod/src/codemods/v5/replace-usage-token-properties.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/packages/codemod/src/codemods/v6/rename-vertex-provider-metadata-key.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key-google-only.input.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key-google-only.output.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key.input.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/packages/codemod/src/test/__testfixtures__/rename-vertex-provider-metadata-key.output.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/packages/codemod/src/test/__testfixtures__/replace-token-usage-types.input.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/packages/codemod/src/test/__testfixtures__/replace-token-usage-types.output.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/packages/codemod/src/test/rename-vertex-provider-metadata-key.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/packages/codemod/src/test/replace-token-usage-types.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/packages/provider-utils/src/load-api-key.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/ai23/packages/provider/src/errors/load-api-key-error.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/deer-flow/.env.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/deer-flow/frontend/.env.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/deer-flow/frontend/src/components/workspace/token-usage-indicator.tsx",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/hermes-agent/.env.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MA-CityOS-Global-Mesh",
+            "file": "city_data/Allies/hermes-agent/tests/hermes_cli/test_profile_export_credentials.py",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "MiroFish",
+            "file": ".env.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "cypress/composables/setup-workflow-credentials-button.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "cypress/e2e/2-credentials.cy.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "cypress/e2e/34-template-credentials-setup.cy.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "cypress/fixtures/Test_workflow_partial_execution_with_missing_credentials.json",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "cypress/fixtures/workflow-with-unknown-credentials.json",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "cypress/pages/credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "cypress/pages/modals/credentials-modal.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/api-keys/__tests__/create-api-key-request.dto.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/api-keys/__tests__/update-api-key-request.dto.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/api-keys/create-api-key-request.dto.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/api-keys/update-api-key-request.dto.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/auth/__tests__/resolve-signup-token-query.dto.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/auth/resolve-signup-token-query.dto.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/credentials",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/credentials/__tests__",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/credentials/__tests__/create-credential.dto.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/credentials/__tests__/credentials-get-many-request.dto.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/credentials/__tests__/credentials-get-one-request.dto.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/credentials/__tests__/generate-credential-name.dto.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/credentials/create-credential.dto.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/credentials/credentials-get-many-request.dto.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/credentials/credentials-get-one-request.dto.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/credentials/generate-credential-name.dto.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/password-reset/__tests__/resolve-password-token-query.dto.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/dto/password-reset/resolve-password-token-query.dto.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/api-types/src/schemas/password-reset-token.schema.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/client-oauth2/src/client-oauth2-token.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/client-oauth2/src/credentials-flow.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/client-oauth2/test/credentials-flow.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/config/src/configs/credentials.config.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/db/src/entities/api-key.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/db/src/entities/credentials-entity.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/db/src/entities/invalid-auth-token.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/db/src/entities/shared-credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/db/src/migrations/common/1630330987096-UpdateWorkflowCredentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/db/src/migrations/mysqldb/1630451444017-UpdateWorkflowCredentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/db/src/migrations/mysqldb/1739873751194-FixTestDefinitionPrimaryKey.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/db/src/migrations/postgresdb/1630419189837-UpdateWorkflowCredentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/db/src/repositories/api-key.repository.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/db/src/repositories/credentials.repository.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/db/src/repositories/invalid-auth-token.repository.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/db/src/repositories/shared-credentials.repository.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/AnthropicApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/AzureEntraCognitiveServicesOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/AzureOpenAiApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/CohereApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/DeepSeekApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/GooglePalmApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/GroqApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/HuggingFaceApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/MilvusApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/MistralCloudApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/MotorheadApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/OllamaApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/OpenRouterApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/PineconeApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/QdrantApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/SearXngApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/SerpApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/VercelAiGatewayApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/WeaviateApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/WolframAlphaApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/XAiApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/XataApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/credentials/ZepApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/nodes/llms/LmChatAzureOpenAi/__tests__/api-key.handler.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/nodes/llms/LmChatAzureOpenAi/credentials",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/nodes/llms/LmChatAzureOpenAi/credentials/N8nOAuth2TokenCredential.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/nodes/llms/LmChatAzureOpenAi/credentials/api-key.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/nodes/llms/LmChatAzureOpenAi/credentials/oauth2.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/utils/tests/tiktoken.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/utils/tokenizer/tests/token-estimator.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/utils/tokenizer/tiktoken.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/nodes-langchain/utils/tokenizer/token-estimator.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/@n8n/task-runner/src/js-task-runner/errors/reserved-key-not-found.error.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/__tests__/credentials-helper.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/__tests__/credentials-overwrites.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/__tests__/load-nodes-and-credentials.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/commands/export/credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/commands/import/credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/credentials-helper.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/credentials-overwrites.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/credentials",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/credentials/__tests__",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/credentials/__tests__/credentials.controller.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/credentials/__tests__/credentials.service.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/credentials/__tests__/credentials.test-data.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/credentials/credentials-finder.service.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/credentials/credentials.controller.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/credentials/credentials.service.ee.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/credentials/credentials.service.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/databases/repositories/__tests__/credentials.repository.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/environments.ee/source-control/types/key-pair-type.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/environments.ee/source-control/types/key-pair.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/environments.ee/source-control/types/source-control-generate-key-pair.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/errors/credentials-overwrites-already-set.error.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/executions/pre-execution-checks/__tests__/credentials-permission-checker.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/executions/pre-execution-checks/credentials-permission-checker.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/load-nodes-and-credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/middlewares/list-query/dtos/credentials.filter.dto.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/middlewares/list-query/dtos/credentials.select.dto.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/modules/external-secrets.ee/providers/__tests__/azure-key-vault.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/modules/external-secrets.ee/providers/azure-key-vault",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/modules/external-secrets.ee/providers/azure-key-vault/azure-key-vault.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/modules/external-secrets.ee/providers/azure-key-vault/types.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/__tests__",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/__tests__/credentials.service.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/credentials.handler.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/credentials.middleware.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/credentials.service.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/spec",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/spec/paths",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/spec/paths/credentials.id.transfer.yml",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/spec/paths/credentials.id.yml",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/spec/paths/credentials.schema.id.yml",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/spec/paths/credentials.yml",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/spec/schemas",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/spec/schemas/create-credential-response.yml",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/spec/schemas/credential.yml",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/spec/schemas/credentialType.yml",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/spec/schemas/parameters",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/public-api/v1/handlers/credentials/spec/schemas/parameters/credentialId.yml",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/security-audit/risk-reporters/credentials-risk-reporter.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/services/__tests__/credentials-finder.service.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/services/__tests__/credentials-tester.service.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/services/__tests__/public-api-key.service.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/services/credentials-tester.service.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/services/public-api-key.service.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/task-runners/errors/missing-auth-token.error.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/src/user-management/email/templates/credentials-shared.mjml",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/test/integration/commands/credentials.cmd.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/test/integration/commands/import-credentials",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/test/integration/commands/import-credentials/credentials-updated.json",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/test/integration/commands/import-credentials/credentials.json",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/test/integration/commands/import-credentials/separate",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/test/integration/commands/import-credentials/separate/separate-credential.json",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/test/integration/credentials-helper.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/test/integration/credentials",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/test/integration/credentials/credentials.api.ee.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/test/integration/credentials/credentials.api.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/test/integration/credentials/credentials.service.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/test/integration/executions/pre-execution-checks/credentials-permission-checker.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/test/integration/public-api/credentials.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/test/integration/security-audit/credentials-risk-reporter.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/cli/test/integration/shared/db/credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/core/nodes-testing/credentials-helper.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/core/nodes-testing/load-nodes-and-credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/core/src/__tests__/credentials.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/core/src/credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/core/src/execution-engine/node-execution-context/credentials-test-context.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/core/src/instance-settings/worker-missing-encryption-key.error.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/frontend/editor-ui/src/api/credentials.ee.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/frontend/editor-ui/src/api/credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/frontend/editor-ui/src/assets/images/azure-key-vault.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/frontend/editor-ui/src/components/NodeCredentials.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/frontend/editor-ui/src/components/NodeCredentials.vue",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/frontend/editor-ui/src/stores/credentials.store.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/frontend/editor-ui/src/stores/credentials.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/node-dev/templates/credentials",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/node-dev/templates/credentials/simple.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ActionNetworkApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ActiveCampaignApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/AcuitySchedulingApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/AcuitySchedulingOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/AdaloApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/AffinityApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/AgileCrmApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/AirtableApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/AirtableOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/AirtableTokenApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/AirtopApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/AlienVaultApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Amqp.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ApiTemplateIoApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/AsanaApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/AsanaOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Auth0ManagementApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/AutomizyApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/AutopilotApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Aws.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/AzureStorageOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/AzureStorageSharedKeyApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/BambooHrApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/BannerbearApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/BaserowApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/BeeminderApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/BeeminderOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/BitbucketApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/BitlyApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/BitlyOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/BitwardenApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/BoxOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/BrandfetchApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/BrevoApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/BubbleApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CalApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CalendlyApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CalendlyOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CarbonBlackApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ChargebeeApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CircleCiApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CiscoMerakiApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CiscoSecureEndpointApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CiscoUmbrellaApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CiscoWebexOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ClearbitApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ClickUpApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ClickUpOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ClockifyApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CloudflareApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CockpitApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CodaApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ContentfulApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ConvertApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ConvertKitApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CopperApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CortexApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CrateDb.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CrowdDevApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CrowdStrikeOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/CustomerIoApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/DatadogApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/DeepLApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/DemioApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/DfirIrisApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/DhlApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/DiscordBotApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/DiscordOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/DiscordWebhookApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/DiscourseApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/DisqusApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/DriftApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/DriftOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/DropboxApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/DropboxOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/DropcontactApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/DynatraceApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ERPNextApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/EgoiApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ElasticSecurityApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ElasticsearchApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/EmeliaApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/EventbriteApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/EventbriteOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/F5BigIpApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/FacebookGraphApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/FacebookGraphAppApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/FacebookLeadAdsOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/FigmaApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/FileMaker.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/FilescanApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/FlowApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/FormIoApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/FormstackApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/FormstackOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/FortiGateApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/FreshdeskApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/FreshserviceApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/FreshworksCrmApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Ftp.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GSuiteAdminOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GetResponseApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GetResponseOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GhostAdminApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GhostContentApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GitPassword.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GithubApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GithubOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GitlabApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GitlabOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GmailOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoToWebinarOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GongApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GongOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleAdsOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleAnalyticsOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleBigQueryOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleBooksOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleBusinessProfileOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleCalendarOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleChatOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleCloudNaturalLanguageOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleCloudStorageOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleContactsOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleDocsOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleDriveOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleFirebaseCloudFirestoreOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleFirebaseRealtimeDatabaseOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GooglePerspectiveOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleSheetsOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleSheetsTriggerOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleSlidesOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleTasksOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GoogleTranslateOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GotifyApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GrafanaApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GristApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/GumroadApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HaloPSAApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HarvestApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HarvestOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HelpScoutOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HighLevelApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HighLevelOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HomeAssistantApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HttpBasicAuth.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HttpBearerAuth.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HttpCustomAuth.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HttpDigestAuth.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HttpHeaderAuth.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HttpQueryAuth.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HttpSslAuth.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HubspotApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HubspotAppToken.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HubspotDeveloperApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HubspotOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HumanticAiApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HunterApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/HybridAnalysisApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Imap.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ImpervaWafApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/IntercomApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/InvoiceNinjaApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/IterableApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/JenkinsApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/JinaAiApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/JiraSoftwareCloudApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/JiraSoftwareServerApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/JiraSoftwareServerPatApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/JotFormApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/JwtAuth.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Kafka.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/KeapOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/KibanaApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/KitemakerApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/KoBoToolboxApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Ldap.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/LemlistApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/LineNotifyOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/LinearApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/LinearOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/LingvaNexApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/LinkedInCommunityManagementOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/LinkedInOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/LoneScaleApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Magento2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MailcheckApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MailchimpApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MailchimpOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MailerLiteApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MailgunApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MailjetEmailApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MailjetSmsApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MalcoreApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MandrillApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MarketstackApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MatrixApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MattermostApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MauticApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MauticOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MediumApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MediumOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MessageBirdApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MetabaseApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MicrosoftAzureCosmosDbSharedKeyApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MicrosoftAzureMonitorOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MicrosoftDynamicsOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MicrosoftEntraOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MicrosoftExcelOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MicrosoftGraphSecurityOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MicrosoftOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MicrosoftOneDriveOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MicrosoftOutlookOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MicrosoftSharePointOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MicrosoftSql.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MicrosoftTeamsOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MicrosoftToDoOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MindeeInvoiceApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MindeeReceiptApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MiroOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MispApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MistApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MoceanApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MondayComApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MondayComOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MongoDb.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MonicaCrmApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Mqtt.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Msg91Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/MySql.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/N8nApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/NasaApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/NetlifyApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/NetscalerAdcApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/NextCloudApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/NextCloudOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/NocoDb.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/NocoDbApiToken.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/NotionApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/NotionOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/NpmApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/OAuth1Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/OAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/OdooApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/OktaApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/OneSimpleApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/OnfleetApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/OpenAiApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/OpenCTIApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/OpenWeatherMapApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/OrbitApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/OuraApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/PaddleApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/PagerDutyApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/PagerDutyOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/PayPalApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/PeekalinkApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/PerplexityApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/PhantombusterApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/PhilipsHueOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/PipedriveApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/PipedriveOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/PlivoApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/PostHogApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Postgres.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/PostmarkApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ProfitWellApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/PushbulletOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/PushcutApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/PushoverApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/QRadarApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/QualysApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/QuestDb.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/QuickBaseApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/QuickBooksOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/RabbitMQ.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/RaindropOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Rapid7InsightVmApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/RecordedFutureApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/RedditOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Redis.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/RocketchatApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/RundeckApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/S3.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SalesforceJwtApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SalesforceOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SalesmateApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SeaTableApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SecurityScorecardApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SegmentApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SekoiaApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SendGridApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SendyApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SentryIoApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SentryIoOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SentryIoServerApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ServiceNowBasicApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ServiceNowOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Sftp.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ShopifyAccessTokenApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ShopifyApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ShopifyOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ShufflerApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Signl4Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SlackApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SlackOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Sms77Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Smtp.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/Snowflake.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SolarWindsIpamApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SolarWindsObservabilityApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SplunkApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SpontitApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SpotifyOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SshPassword.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SshPrivateKey.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/StackbyApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/StoryblokContentApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/StoryblokManagementApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/StrapiApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/StrapiTokenApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/StravaOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/StripeApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SupabaseApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SurveyMonkeyApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SurveyMonkeyOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SyncroMspApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/SysdigApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TaigaApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TapfiliateApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TelegramApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TheHiveApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TheHiveProjectApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TimescaleDb.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TodoistApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TodoistOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TogglApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TotpApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TravisCiApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TrellixEpoApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TrelloApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TwakeCloudApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TwakeServerApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TwilioApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TwistOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TwitterOAuth1Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TwitterOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TypeformApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/TypeformOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/UProcApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/UnleashedSoftwareApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/UpleadApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/UptimeRobotApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/UrlScanIoApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/VenafiTlsProtectCloudApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/VenafiTlsProtectDatacenterApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/VeroApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/VerticaApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/VirusTotalApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/VonageApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/WebflowApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/WebflowOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/WekanApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/WhatsAppApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/WhatsAppTriggerApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/WiseApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/WooCommerceApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/WordpressApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/WorkableApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/WufooApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/XeroOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/YouTubeOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/YourlsApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ZabbixApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ZammadBasicAuthApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ZammadTokenAuthApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ZendeskApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ZendeskOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ZohoOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ZoomApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ZoomOAuth2Api.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ZscalerZiaApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/ZulipApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/AWS.dark.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/AWS.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/AlienVault.png",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Auth0.dark.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Auth0.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Azure.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Calendly.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Cisco.dark.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Cisco.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/ConvertApi.png",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/CrowdStrike.dark.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/CrowdStrike.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Datadog.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/DfirIris.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Dynatrace.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Elastic.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/F5.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Filescan.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Fortinet.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Google.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Hybrid.png",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/IBM.dark.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/IBM.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Imperva.dark.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Imperva.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Kibana.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Malcore.png",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Microsoft.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Miro.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Mist.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Okta.dark.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Okta.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/OpenCTI.png",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Qualys.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Rapid7InsightVm.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/RecordedFuture.dark.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/RecordedFuture.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Sekoia.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Shuffler.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/SolarWindsIpam.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/SolarWindsObservability.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Sysdig.Black.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Sysdig.White.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Trellix.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Twake.png",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/VirusTotal.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Wazuh.png",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Zabbix.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/Zscaler.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/highLevel.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/jwt.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/microsoftSharePoint.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/vmware.dark.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/icons/vmware.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/test",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/credentials/test/Aws.credentials.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Aws/__tests__/credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Github/__tests__/oauth2-credentials-expression",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Github/__tests__/oauth2-credentials-expression/setup.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Github/__tests__/oauth2-credentials-expression/test.workflow.json",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/GraphQL/test/workflow.refresh_token.json",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Microsoft/AzureCosmosDb/test/credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Microsoft/AzureCosmosDb/test/credentials",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Microsoft/AzureCosmosDb/test/credentials/sharedKey.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Microsoft/Excel/test/credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Microsoft/SharePoint/test/credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Microsoft/SharePoint/test/credentials",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Microsoft/SharePoint/test/credentials/oauth2.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Microsoft/SharePoint/test/credentials/oauth2.workflow.json",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Microsoft/Storage/test/credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Microsoft/Storage/test/credentials",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Microsoft/Storage/test/credentials/credentials_oauth2.workflow.json",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Microsoft/Storage/test/credentials/credentials_sharedKey.workflow.json",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Microsoft/Storage/test/credentials/oauth2.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Microsoft/Storage/test/credentials/sharedKey.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Microsoft/Teams/test/credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Perplexity/test/credentials",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Perplexity/test/credentials/PerplexityApi.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/SurveyMonkey",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/SurveyMonkey/GenericFunctions.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/SurveyMonkey/Interfaces.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/SurveyMonkey/SurveyMonkeyTrigger.node.json",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/SurveyMonkey/SurveyMonkeyTrigger.node.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/SurveyMonkey/surveyMonkey.svg",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/nodes-base/nodes/Wordpress/__tests__/workflow/credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n",
+            "file": "packages/testing/playwright/tests/cli-workflows/credentials.json",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n-mcp",
+            "file": ".env.docker",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n-mcp",
+            "file": ".env.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n-mcp",
+            "file": ".env.n8n.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n-mcp",
+            "file": ".env.test",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n-mcp",
+            "file": ".env.test.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n-mcp",
+            "file": "dist/n8n/MCPApi.credentials.d.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n-mcp",
+            "file": "dist/n8n/MCPApi.credentials.d.ts.map",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n-mcp",
+            "file": "dist/n8n/MCPApi.credentials.js",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n-mcp",
+            "file": "dist/n8n/MCPApi.credentials.js.map",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n-mcp",
+            "file": "src/mcp/tool-docs/workflow_management/n8n-manage-credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n-mcp",
+            "file": "src/n8n/MCPApi.credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n-mcp",
+            "file": "tests/integration/n8n-api/utils/credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "n8n-mcp",
+            "file": "tests/mocks/n8n-api/data/credentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "openclaude",
+            "file": ".env.example",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "openclaude",
+            "file": "src/bridge/workSecret.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "openclaude",
+            "file": "src/bridge/workSecret.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "openclaude",
+            "file": "src/components/ApproveApiKey.tsx",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "openclaude",
+            "file": "src/services/api/providerConfig.runtimeCodexCredentials.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "openclaude",
+            "file": "src/utils/codexCredentials.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "openclaude",
+            "file": "src/utils/codexCredentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "openclaude",
+            "file": "src/utils/computerUse/escHotkey.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "openclaude",
+            "file": "src/utils/geminiCredentials.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "openclaude",
+            "file": "src/utils/geminiCredentials.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "openclaude",
+            "file": "src/utils/githubModelsCredentials.hydrate.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "openclaude",
+            "file": "src/utils/githubModelsCredentials.refresh.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "openclaude",
+            "file": "src/utils/githubModelsCredentials.test.ts",
+            "risk": "CR\u00cdTICO"
+        },
+        {
+            "repo": "openclaude",
+            "file": "src/utils/githubModelsCredentials.ts",
+            "risk": "CR\u00cdTICO"
         }
     ],
     "allied_projects": [
@@ -301,11 +3799,6 @@
             "desc": "The agent that grows with you"
         },
         {
-            "name": "holoos",
-            "url": "https://github.com/suryamayaharum-droid/holoos",
-            "desc": "HoloOS - Sistema de Super Intelig\u00eancia Unificada v0.8.0"
-        },
-        {
             "name": "MA-CityOS-Core",
             "url": "https://github.com/suryamayaharum-droid/MA-CityOS-Core",
             "desc": "O N\u00facleo e Documenta\u00e7\u00e3o do Sistema Operacional Meta Agentes (MA-CityOS)"
@@ -314,6 +3807,21 @@
             "name": "mempalace",
             "url": "https://github.com/suryamayaharum-droid/mempalace",
             "desc": "The highest-scoring AI memory system ever benchmarked. And it's free."
+        },
+        {
+            "name": "n8n",
+            "url": "https://github.com/suryamayaharum-droid/n8n",
+            "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
+        },
+        {
+            "name": "openclaude",
+            "url": "https://github.com/suryamayaharum-droid/openclaude",
+            "desc": "Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models, and 200+ models via OpenAI-compatible APIs."
+        },
+        {
+            "name": "pandora-os",
+            "url": "https://github.com/suryamayaharum-droid/pandora-os",
+            "desc": "Pandora OS - Autonomous Self-Evolving AI System"
         }
     ]
 }

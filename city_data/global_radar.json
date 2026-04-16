@@ -1,0 +1,56 @@
+[
+    {
+        "name": "666ghj/MiroFish",
+        "stars": 55588,
+        "url": "https://github.com/666ghj/MiroFish",
+        "desc": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. \u7b80\u6d01\u901a\u7528\u7684\u7fa4\u4f53\u667a\u80fd\u5f15\u64ce\uff0c\u9884\u6d4b\u4e07\u7269"
+    },
+    {
+        "name": "rohitg00/ai-engineering-from-scratch",
+        "stars": 2921,
+        "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+        "desc": "Learn it. Build it. Ship it for others."
+    },
+    {
+        "name": "nikmcfly/MiroFish-Offline",
+        "stars": 1937,
+        "url": "https://github.com/nikmcfly/MiroFish-Offline",
+        "desc": "Offline multi-agent simulation & prediction engine. English fork of MiroFish with Neo4j + Ollama local stack."
+    },
+    {
+        "name": "666ghj/BettaFish",
+        "stars": 40465,
+        "url": "https://github.com/666ghj/BettaFish",
+        "desc": "\u5fae\u8206\uff1a\u4eba\u4eba\u53ef\u7528\u7684\u591aAgent\u8206\u60c5\u5206\u6790\u52a9\u624b\uff0c\u6253\u7834\u4fe1\u606f\u8327\u623f\uff0c\u8fd8\u539f\u8206\u60c5\u539f\u8c8c\uff0c\u9884\u6d4b\u672a\u6765\u8d70\u5411\uff0c\u8f85\u52a9\u51b3\u7b56\uff01\u4ece0\u5b9e\u73b0\uff0c\u4e0d\u4f9d\u8d56\u4efb\u4f55\u6846\u67b6\u3002"
+    },
+    {
+        "name": "MervinPraison/PraisonAI",
+        "stars": 6942,
+        "url": "https://github.com/MervinPraison/PraisonAI",
+        "desc": "PraisonAI \ud83e\udd9e \u2014 Hire a 24/7 AI Workforce. Stop writing boilerplate and start shipping autonomous agents that research, plan, code, and execute tasks. Deployed in 5 lines of code with built-in memory, RAG, and support for 100+ LLMs."
+    },
+    {
+        "name": "ag2ai/ag2",
+        "stars": 4406,
+        "url": "https://github.com/ag2ai/ag2",
+        "desc": "AG2 (formerly AutoGen): The Open-Source AgentOS.Join us at: https://discord.gg/sNGSwQME3x"
+    },
+    {
+        "name": "GCWing/BitFun",
+        "stars": 579,
+        "url": "https://github.com/GCWing/BitFun",
+        "desc": "BitFun is a next-generation AI assistant with built-in Code Agent and Cowork Agent. It has memory, personality, and the ability to evolve over time. You can remotely control the desktop through mobile QR pairing or Telegram / Feishu bots, send instructions, and watch each execution step in real time while the Agent keeps working in the background."
+    },
+    {
+        "name": "alibaba/anolisa",
+        "stars": 156,
+        "url": "https://github.com/alibaba/anolisa",
+        "desc": "ANOLISA - Agentic Nexus Operating Layer & Interface System Architecture"
+    },
+    {
+        "name": "augmentedmike/miniclaw-os",
+        "stars": 37,
+        "url": "https://github.com/augmentedmike/miniclaw-os",
+        "desc": "We gave AI agents a brain. Memory, planning, continuity, and self-repair \u2014 the missing cognitive architecture layer. Runs on your Mac."
+    }
+]

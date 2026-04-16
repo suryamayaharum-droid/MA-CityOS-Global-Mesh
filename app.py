@@ -17,7 +17,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<h1 class="main-header">🧬 MA-CityOS: V10 AUTONOMOUS PULSE</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">💻 MA-CityOS: V11 AGENTIC OS</h1>', unsafe_allow_html=True)
 
 # Instâncias Principais
 bridge = OpenClawBridge()
@@ -37,77 +37,81 @@ def read_log_tail(filename, lines=20):
             with open(filename, "r") as f:
                 return "".join(f.readlines()[-lines:])
     except: pass
-    return "O coração da cidade ainda não bateu."
+    return "KERNEL IDLE (Ocioso)."
 
 config = load_json("city_config.json") or {"districts": []}
-global_status = load_json("city_data/global_status.json") or {}
 skills_map = load_json("city_data/skills_map.json") or []
+global_status = load_json("city_data/global_status.json") or {}
 
-# --- TOP BAR: STATUS DA MALHA ---
+# --- TOP BAR: STATUS DA MALHA DO OS ---
 cols = st.columns(4)
-cols[0].metric("Nós Ativos (Bairros)", len(config.get("districts", [])))
-cols[1].metric("Habilidades Apreendidas", len(skills_map))
-cols[2].metric("Tarefas Pendentes", len(task_mgr.get_pending_tasks()))
-cols[3].metric("Conexões P2P", "0 (Ouvindo)")
+cols[0].metric("OS Bairros (Nodes)", len(config.get("districts", [])))
+cols[1].metric("Habilidades Carregadas", len(skills_map))
+cols[2].metric("Syscalls Pendentes (Fila)", len(task_mgr.get_pending_tasks()))
+cols[3].metric("Sinal de Resiliência", "ON")
 st.divider()
 
-# --- TABS DE OPERAÇÃO ---
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["🤖 TERMINAL ELITE", "🫀 PULSO DA CIDADE", "📋 FILA DE TAREFAS", "🧠 CÉREBRO DA CIDADE", "⚙️ RESILIÊNCIA"])
+# --- TABS DO SISTEMA OPERACIONAL ---
+tab1, tab2, tab3, tab4 = st.tabs(["💻 SHELL INTERATIVO", "🫀 KERNEL LOGS (Scheduler)", "⚙️ OS PROCESSES (top)", "🛡️ SEGURANÇA & REDE"])
 
 with tab1:
-    st.markdown("### 🧬 Terminal de Interação")
+    st.markdown("### 💻 Terminal do Kernel")
     if "messages" not in st.session_state: st.session_state.messages = []
     for msg in st.session_state.messages:
         with st.chat_message(msg["role"]): st.markdown(msg["content"])
 
-    if prompt := st.chat_input("Dê uma ordem para o Kernel..."):
+    if prompt := st.chat_input("~$ Execute um comando no OS..."):
         st.session_state.messages.append({"role": "user", "content": prompt})
         with st.chat_message("user"): st.markdown(prompt)
         with st.chat_message("assistant"):
-            with st.spinner("Processando via Swarm Cognitivo..."):
+            with st.spinner("Processando Syscall via Bypass..."):
                 response = bridge.ask_agent(prompt)
                 st.markdown(response)
                 st.session_state.messages.append({"role": "assistant", "content": response})
 
 with tab2:
-    st.markdown("### 🫀 Sistema Nervoso Central")
-    st.write("Visão em tempo real dos pensamentos autônomos da cidade operando em Background.")
+    st.markdown("### 🫀 Syslog do OS Scheduler")
+    st.write("Monitoramento em tempo real do Heartbeat e das Syscalls feitas pelos agentes.")
     log_content = read_log_tail("city_data/sys_stream.log", lines=30)
     st.code(log_content, language="bash")
-    if st.button("🔄 Atualizar Pulso"): st.rerun()
+    if st.button("🔄 Atualizar Syslog"): st.rerun()
 
 with tab3:
-    st.markdown("### 📋 Logística do Prefeito (Task Manager)")
-    nova_ordem = st.text_input("Enviar Ordem Global para o Prefeito quebrar em tarefas:")
-    if st.button("Delegar Ordem"):
-        with st.spinner("Dividindo ordem..."):
-            tasks = task_mgr.delegate_order(nova_ordem)
-            st.success(f"{len(tasks)} micro-tarefas geradas!")
-            
-    st.markdown("#### Tarefas na Fila")
-    pending = task_mgr.get_pending_tasks()
-    if pending:
-        st.table(pd.DataFrame(pending)[["id", "type", "desc", "status"]])
-    else:
-        st.info("Nenhuma tarefa pendente.")
-
-with tab3:
-    st.markdown("### 🧠 Habilidades Integradas (Aliados)")
-    if skills_map:
-        for skill in skills_map:
-            with st.expander(f"Habilidade: {skill['name']}"):
-                st.write(skill['summary'])
-                st.caption(f"Memória ID: {skill['mem_id']}")
-    else:
-        st.warning("O Agente de Integração ainda não rodou. Nenhuma habilidade mapeada.")
+    st.markdown("### ⚙️ Gerenciador de Processos Inteligentes")
+    colA, colB = st.columns([1, 2])
+    with colA:
+        st.markdown("#### Fila de Syscalls (Ordem)")
+        nova_ordem = st.text_input("~$ sudo delegate task:")
+        if st.button("Enviar para Escalonador"):
+            with st.spinner("Dividindo PID e Syscalls..."):
+                tasks = task_mgr.delegate_order(nova_ordem)
+                st.success(f"{len(tasks)} processos forjados no Kernel!")
+    with colB:
+        st.markdown("#### Processos Escalados (PID Table)")
+        pending = task_mgr.get_pending_tasks()
+        if pending:
+            df = pd.DataFrame(pending)[["id", "type", "desc", "status"]]
+            df.columns = ["PID", "AGENT", "TASK_DESC", "STATE"]
+            st.dataframe(df, use_container_width=True)
+        else:
+            st.info("Nenhum PID ativo no momento. OS em IDLE.")
 
 with tab4:
-    st.markdown("### 🛡️ Saúde dos Provedores (Auto-Cura)")
+    st.markdown("### 🛡️ Módulos de Segurança e Resiliência")
+    st.write("**Monitor de Circuit Breaker (Canais de IA):**")
     h_cols = st.columns(len(health))
     for i, (provider, data) in enumerate(health.items()):
         with h_cols[i]:
             status_class = "status-ok" if data["status"] == "OK" else "status-error"
             st.markdown(f"<div class='resilience-card'><p style='color:#888;'>{provider.upper()}</p><p class='{status_class}'>{data['status']}</p><p>Falhas: {data['failures']}</p></div>", unsafe_allow_html=True)
+    st.divider()
+    st.markdown("### 🌐 Rede de Aliados do Kernel")
+    if skills_map:
+        for skill in skills_map:
+            with st.expander(f"Módulo: {skill['name']}"):
+                st.write(skill['summary'])
+    else:
+        st.warning("Nenhum módulo de aliado carregado na memória do OS.")
 
 st.sidebar.markdown("---")
-st.sidebar.caption("MA-CityOS V9 // Consciência Coletiva Ativa")
+st.sidebar.caption("MA-CityOS V11 // Agentic Operating System")

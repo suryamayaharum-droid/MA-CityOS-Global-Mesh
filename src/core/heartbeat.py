@@ -4,71 +4,74 @@ import os
 from src.agents.mayor_task_manager import MayorTaskManager
 from src.agents.architect_coder import ArchitectCoder
 from src.core.cognitive_swarm import CognitiveSwarm
-from src.core.memory import NeuralMemory
+from src.core.sys_kernel import kernel
 
-class CityHeartbeat:
-    """O Pulso de Vida do MA-CityOS: Loop de Autonomia Pró-Ativa."""
+class OS_Scheduler:
+    """O Escalonador do Agentic OS. Gerencia o ciclo de vida dos Processos-Agentes."""
     
     def __init__(self):
         self.task_manager = MayorTaskManager()
         self.coder = ArchitectCoder()
         self.swarm = CognitiveSwarm()
-        self.memory = NeuralMemory()
         self.log_file = "city_data/sys_stream.log"
         
     def _log(self, message):
         timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
-        log_msg = f"[{timestamp}] 🫀 PULSO: {message}"
+        log_msg = f"[{timestamp}] 🫀 [OS SCHEDULER]: {message}"
         print(log_msg)
         with open(self.log_file, "a") as f:
             f.write(log_msg + "\n")
 
-    async def process_task(self, task):
-        self._log(f"Iniciando processamento autônomo da tarefa: {task['id']} - {task['type']}")
-        
+    async def _execute_process(self, pid, task):
+        """O kernel executa o processo do agente dentro de um PID isolado."""
         try:
             if task['type'] == 'research':
+                # Swarm Consome Ciclos via Syscall
+                kernel.pm.consume_cycles(pid)
                 perspectives = ["Inovação", "Segurança", "Viabilidade"]
                 insights = await self.swarm.think_parallel(task['desc'], perspectives)
                 
-                # Salva o consenso na memória
+                # Usa Syscall para escrever na Memória
                 combined_insight = "\n".join([f"({i['persona']}): {i['insight'][:100]}" for i in insights])
-                self.memory.store_memory(combined_insight, wing="Research", room=task['id'])
-                self._log(f"Pesquisa concluída e indexada no ChromaDB (ID: {task['id']}).")
+                kernel.syscall_write_memory(pid, combined_insight, tags=["research", "swarm"])
+                self._log(f"Processo {pid} (Swarm) concluiu a pesquisa via Syscalls.")
                 
             elif task['type'] == 'code':
-                self._log(f"Acordando Engenheiro para escrever módulo: {task['id']}")
+                kernel.pm.consume_cycles(pid)
                 file_path = await self.coder.create_module(f"auto_module_{task['id']}", task['desc'])
-                self._log(f"Código forjado com sucesso em {file_path}.")
+                self._log(f"Processo {pid} (Arquiteto) injetou código em {file_path}.")
                 
-            elif task['type'] == 'deploy':
-                self._log(f"Simulando deploy tático para a tarefa {task['id']} na malha P2P.")
-                time.sleep(2) # Simula tempo de deploy
-                
-            # Marca como concluída
             self.task_manager.complete_task(task['id'])
-            self._log(f"Tarefa {task['id']} finalizada e baixada da fila.")
             
         except Exception as e:
-            self._log(f"⚠️ Erro ao processar tarefa {task['id']}: {e}")
+            self._log(f"⚠️ KERNEL PANIC no Processo {pid}: {e}")
+        finally:
+            # Encerra o processo e libera recursos virtuais
+            kernel.pm.kill_process(pid)
 
-    async def start_beat(self, interval=30):
-        self._log("SISTEMA NERVOSO CENTRAL ATIVADO. A cidade agora respira sozinha.")
+    async def start_os_loop(self, interval=30):
+        self._log("MA-CITY AGENTIC OS BOOT SEQUENCE INICIADA.")
+        
         while True:
             pending_tasks = self.task_manager.get_pending_tasks()
             
             if pending_tasks:
-                self._log(f"Detectadas {len(pending_tasks)} tarefas pendentes. Acordando o Enxame...")
-                # Pega a primeira tarefa da fila
                 task = pending_tasks[0]
-                await self.process_task(task)
+                
+                # 1. Cria um Processo Formal no Kernel
+                agent_name = "CognitiveSwarm" if task['type'] == 'research' else "ArchitectCoder"
+                pid = kernel.pm.spawn_process(agent_name, task['desc'])
+                
+                self._log(f"Escalonando PID: {pid} para tarefa: {task['id']}")
+                
+                # 2. Executa a tarefa dentro do PID
+                await self._execute_process(pid, task)
             else:
-                # Período de ociosidade: Otimiza a memória
-                self._log("Nenhuma tarefa crítica. Otimizando palácio de memória...")
-                self.memory.optimize_memory()
+                self._log("OS IDLE (Ocioso). Aguardando syscalls ou novas tarefas.")
+                kernel.memory.optimize_memory()
                 
             time.sleep(interval)
 
 if __name__ == "__main__":
-    heart = CityHeartbeat()
-    asyncio.run(heart.start_beat(interval=15)) # Pulso a cada 15 segundos para teste
+    scheduler = OS_Scheduler()
+    asyncio.run(scheduler.start_os_loop(interval=15))

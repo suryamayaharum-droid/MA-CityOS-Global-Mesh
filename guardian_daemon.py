@@ -10,6 +10,7 @@ class GuardianDaemon:
         self.services = {
             "heartbeat": {"cmd": [sys.executable, "src/core/heartbeat.py"], "process": None, "restarts": 0},
             "p2p_bus": {"cmd": [sys.executable, "src/core/p2p_network.py"], "process": None, "restarts": 0},
+            "telemetry": {"cmd": [sys.executable, "src/core/sys_telemetry.py"], "process": None, "restarts": 0},
             "terminal": {"cmd": [sys.executable, "-m", "streamlit", "run", "app.py", "--server.port=8501", "--server.headless=true"], "process": None, "restarts": 0}
         }
         self.log_file = "city_data/guardian.log"

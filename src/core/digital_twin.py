@@ -5,10 +5,24 @@ from src.core.bus import CityBus
 class DigitalTwinEngine:
     """O Motor de Réplica Digital do Mundo Físico da MA-CityOS."""
     
-    def __init__(self):
+    def __init__(self, state_file="city_data/digital_twin.json"):
         self.bus = CityBus()
-        self.entities = {} # Mapeamento de objetos reais para digitais
+        self.state_file = state_file
+        self.entities = self._load_state()
         
+    def _load_state(self):
+        if os.path.exists(self.state_file):
+            try:
+                with open(self.state_file, "r") as f:
+                    return json.load(f)
+            except: return {}
+        return {}
+
+    def _save_state(self):
+        os.makedirs(os.path.dirname(self.state_file), exist_ok=True)
+        with open(self.state_file, "w") as f:
+            json.dump(self.entities, f, indent=2)
+
     def sync_physical_to_digital(self, object_id, data):
         """Cria ou atualiza a réplica digital de um objeto físico."""
         self.entities[object_id] = {
@@ -16,6 +30,7 @@ class DigitalTwinEngine:
             "data": data,
             "holographic_render": True
         }
+        self._save_state()
         self.bus.broadcast("DigitalTwin", f"Objeto {object_id} sincronizado com a Réplica Digital.", topic="world_replica")
         return f"Replicação Concluída: {object_id}"
 

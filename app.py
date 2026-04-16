@@ -17,7 +17,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<h1 class="main-header">🧬 MA-CityOS: V9 COGNITIVE SWARM</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">🧬 MA-CityOS: V10 AUTONOMOUS PULSE</h1>', unsafe_allow_html=True)
 
 # Instâncias Principais
 bridge = OpenClawBridge()
@@ -30,6 +30,14 @@ def load_json(filename):
             with open(filename, "r") as f: return json.load(f)
     except: pass
     return None
+
+def read_log_tail(filename, lines=20):
+    try:
+        if os.path.exists(filename):
+            with open(filename, "r") as f:
+                return "".join(f.readlines()[-lines:])
+    except: pass
+    return "O coração da cidade ainda não bateu."
 
 config = load_json("city_config.json") or {"districts": []}
 global_status = load_json("city_data/global_status.json") or {}
@@ -44,10 +52,10 @@ cols[3].metric("Conexões P2P", "0 (Ouvindo)")
 st.divider()
 
 # --- TABS DE OPERAÇÃO ---
-tab1, tab2, tab3, tab4 = st.tabs(["🤖 TERMINAL ELITE", "📋 FILA DE TAREFAS", "🧠 CÉREBRO DA CIDADE", "⚙️ RESILIÊNCIA"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["🤖 TERMINAL ELITE", "🫀 PULSO DA CIDADE", "📋 FILA DE TAREFAS", "🧠 CÉREBRO DA CIDADE", "⚙️ RESILIÊNCIA"])
 
 with tab1:
-    st.markdown("### 🧬 Pulso Neural")
+    st.markdown("### 🧬 Terminal de Interação")
     if "messages" not in st.session_state: st.session_state.messages = []
     for msg in st.session_state.messages:
         with st.chat_message(msg["role"]): st.markdown(msg["content"])
@@ -62,6 +70,13 @@ with tab1:
                 st.session_state.messages.append({"role": "assistant", "content": response})
 
 with tab2:
+    st.markdown("### 🫀 Sistema Nervoso Central")
+    st.write("Visão em tempo real dos pensamentos autônomos da cidade operando em Background.")
+    log_content = read_log_tail("city_data/sys_stream.log", lines=30)
+    st.code(log_content, language="bash")
+    if st.button("🔄 Atualizar Pulso"): st.rerun()
+
+with tab3:
     st.markdown("### 📋 Logística do Prefeito (Task Manager)")
     nova_ordem = st.text_input("Enviar Ordem Global para o Prefeito quebrar em tarefas:")
     if st.button("Delegar Ordem"):

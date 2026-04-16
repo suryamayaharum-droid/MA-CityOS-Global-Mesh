@@ -1,30 +1,21 @@
 #!/bin/bash
-# 🏙️ MA-CityOS: STARTUP SCRIPT V10
-# Este script liga o Coração da Cidade e o Dashboard simultaneamente.
+# 🏙️ MA-CityOS: STARTUP SCRIPT V12 (GUARDIAN DAEMON)
+# Inicialização do Sistema Operacional Invulnerável
 
-echo "🌌 MA-CityOS: Inicializando a Malha..."
+echo "🌌 MA-CityOS: Despertando Kernel V12..."
 
-# 1. Cria arquivos de log se não existirem
+# 1. Configuração do Ambiente
 mkdir -p city_data
 touch city_data/sys_stream.log
-touch city_data/task_queue.json
-
-# 2. Liga o Coração da Cidade (Heartbeat) em Background
-echo "🫀 Ligando o Pulso Autônomo (Background)..."
+touch city_data/guardian.log
 export PYTHONPATH=$PYTHONPATH:.
-python3 src/core/heartbeat.py &
-HEARTBEAT_PID=$!
 
-# 3. Liga o Servidor P2P em Background
-echo "🌐 Abrindo portas da Malha P2P..."
-python3 src/core/p2p_network.py &
-P2P_PID=$!
+# 2. Transição de Poder para o Guardian Daemon
+echo "🛡️ Transferindo controle para o Guardian Daemon..."
+echo "⚠️ O sistema se tornará auto-sustentável. Para desligar, use Ctrl+C."
 
-# 4. Liga o Dashboard (Foreground)
-echo "💻 Iniciando Neural Terminal..."
-streamlit run app.py
-
-# Se o Streamlit for fechado, mata os processos em background
-kill $HEARTBEAT_PID
-kill $P2P_PID
-echo "🛑 MA-CityOS Desativado."
+# O Guardian inicia e monitora:
+# - Heartbeat (O escalonador autônomo)
+# - P2P Network (A comunicação de bairro)
+# - Streamlit (A interface do usuário)
+python3 guardian_daemon.py

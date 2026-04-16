@@ -3,6 +3,8 @@ import time
 from src.core.shadow_exec import ShadowExecutive
 from src.agents.cyber_shield import CyberShield
 from src.agents.galactic_miner import GalacticMiner
+from src.core.p2p_bus import LocalP2PBus
+from src.agents.self_healing import SelfHealingAgent
 from src.core.digital_twin import DigitalTwinEngine
 
 from src.core.kali_engine.uhl_parser import UHLParser
@@ -32,6 +34,10 @@ def consolidate():
     
     # 3. Ativação do Motor de Réplica Digital do Mundo
     twin = DigitalTwinEngine()
+    # Ativação P2P e Self-Healing
+    p2p = LocalP2PBus()
+    p2p.emit_signal("system", "Paralelismo Cognitivo Ativado")
+    healer = SelfHealingAgent()
     twin.sync_physical_to_digital("MA_City_Kernel", {"status": "Imortal", "level": "Holographic"})
     
     # 4. Início da Mineração Contínua de Expansão
@@ -43,6 +49,7 @@ def consolidate():
     while True:
         # A cada 5 minutos, a cidade se expande minerando o mundo
         miner.mine_repositories()
+        healer.monitor_and_fix()
         time.sleep(300)
 
 if __name__ == "__main__":

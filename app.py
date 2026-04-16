@@ -3,85 +3,111 @@ import os
 import json
 import pandas as pd
 from datetime import datetime
-from src.agents.openclaude_bridge import OpenClawBridge
+from pathlib import Path
 
-st.set_page_config(page_title="MA-CityOS Neural Terminal", page_icon="🏙️", layout="wide")
+# Configuração da Página
+st.set_page_config(page_title="MA-CityOS: Holographic Command", page_icon="🏙️", layout="wide")
 
-# --- CSS CUSTOMIZADO (Cyberpunk Resilience Feel) ---
 st.markdown("""
     <style>
-    .status-ok { color: #00FF41; font-weight: bold; }
-    .status-error { color: #FF3131; font-weight: bold; }
-    .status-warn { color: #FFD700; font-weight: bold; }
-    .resilience-card { background: #111; border: 1px solid #333; padding: 15px; border-radius: 8px; }
+    .main { background-color: #0e1117; color: #00ff41; font-family: 'Courier New', Courier, monospace; }
+    .stMetric { background-color: #1a1c24; border-radius: 10px; padding: 10px; border: 1px solid #00ff41; }
     </style>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
-st.markdown('<h1 style="color:#00FF41; font-family:monospace;">🧬 MA-CityOS: RESILIENCE TERMINAL V5</h1>', unsafe_allow_html=True)
+st.title("🏙️ MA-CityOS: PAINEL HOLOGRÁFICO DE COMANDO")
+st.sidebar.header("💠 STATUS DO KERNEL")
 
-# --- CARREGAMENTO DE DADOS ---
-bridge = OpenClawBridge()
-health = bridge.provider_health
+# --- FUNÇÕES DE CARREGAMENTO ---
+def load_mesh_signals():
+    mesh_path = Path("macity_vault/mesh")
+    signals = []
+    if mesh_path.exists():
+        for file in mesh_path.glob("*.json"):
+            try:
+                with open(file, "r") as f:
+                    signals.append(json.load(f))
+            except: pass
+    return signals
 
-# --- MONITOR DE SAÚDE DA MALHA (Top Bar) ---
-cols = st.columns(len(health))
-for i, (provider, data) in enumerate(health.items()):
-    with cols[i]:
-        status_class = "status-ok" if data["status"] == "OK" else "status-error"
-        st.markdown(f"""
-        <div class="resilience-card">
-            <p style="margin:0; font-size:0.8em; color:#888;">Provedor: {provider.upper()}</p>
-            <p class="{status_class}" style="margin:0; font-size:1.2em;">{data['status']}</p>
-            <p style="margin:0; font-size:0.7em; color:#555;">Falhas: {data['failures']}</p>
-        </div>
-        """, unsafe_allow_html=True)
+def load_latest_logs(n=20):
+    log_dir = Path("macity_vault/Logs")
+    log_files = sorted(log_dir.glob("interactions_*.md"), reverse=True)
+    if log_files:
+        with open(log_files[0], "r") as f:
+            return f.readlines()[-n:]
+    return []
+
+# --- DASHBOARD LAYOUT ---
+
+# 1. MONITOR DE INSTÂNCIAS (PARALELISMO COGNITIVO)
+signals = load_mesh_signals()
+instances = list(set([s['sender'] for s in signals]))
+
+st.sidebar.subheader("📡 Malha P2P Detectada")
+for inst in instances:
+    st.sidebar.success(f"Peer Online: {inst}")
+
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+    st.metric("Instâncias em Paralelo", len(instances))
+with col2:
+    st.metric("Sinais na Malha", len(signals))
+with col3:
+    st.metric("Status Ouroboros", "Líquido/Ativo")
+with col4:
+    st.metric("Modo de Governança", "Outlier (Shadow)")
 
 st.divider()
 
-# --- ÁREA DE OPERAÇÃO ---
-tab1, tab2, tab3 = st.tabs(["🤖 TERMINAL DE ELITE", "🛡️ LOGS DE RESILIÊNCIA", "⚙️ CONFIGURAÇÕES DE BYPASS"])
+# 2. VISUALIZAÇÃO DA MALHA DIGITAL
+st.subheader("🌐 Conexões de Paralelismo Cognitivo")
+if signals:
+    df_signals = pd.DataFrame(signals).sort_values(by="timestamp", ascending=False)
+    st.dataframe(df_signals, use_container_width=True)
+else:
+    st.info("Aguardando sinais de rádio digital das instâncias...")
 
-with tab1:
-    st.markdown("### 🧬 Pulso Neural Multi-Canal")
-    if "messages" not in st.session_state:
-        st.session_state.messages = []
+st.divider()
 
-    for msg in st.session_state.messages:
-        with st.chat_message(msg["role"]):
-            st.markdown(msg["content"])
+# 3. AUTO-REGENERAÇÃO E LOGS DE SISTEMA
+left_col, right_col = st.columns(2)
 
-    if prompt := st.chat_input("Envie um comando para a malha..."):
-        st.session_state.messages.append({"role": "user", "content": prompt})
-        with st.chat_message("user"):
-            st.markdown(prompt)
-            
-        with st.chat_message("assistant"):
-            with st.spinner("Navegando pelos canais de resiliência..."):
-                response = bridge.ask_agent(prompt)
-                st.markdown(response)
-                st.session_state.messages.append({"role": "assistant", "content": response})
-
-with tab2:
-    st.markdown("### 🛡️ Histórico de Auto-Cura")
-    if os.path.exists("macity_vault/system_health.json"):
-        with open("macity_vault/system_health.json", "r") as f:
-            logs = [json.loads(line) for line in f.readlines()]
-            df_logs = pd.DataFrame(logs)
-            st.dataframe(df_logs, use_container_width=True)
+with left_col:
+    st.subheader("🛠️ Auto-Regeneração (Self-Healing)")
+    logs = load_latest_logs(50)
+    healing_events = [l for l in logs if "SelfHealing" in l or "regenerado" in l]
+    if healing_events:
+        for event in healing_events:
+            st.warning(event.strip())
     else:
-        st.info("Nenhuma falha registrada ainda. Sistema operando em estabilidade nominal.")
+        st.success("✅ Integridade de Código: 100%. Nenhuma anomalia detectada.")
 
-with tab3:
-    st.markdown("### ⚙️ Lógica de Bypass")
-    st.write("O sistema alterna automaticamente entre canais baseados em:")
-    st.code("""
-    1. Erro 401 -> Bloqueio imediato do provedor (Bypass Crítico).
-    2. Erro 429 -> Backoff Exponencial (2^n) + Troca de Canal.
-    3. Timeout  -> Próximo modelo na pilha de elite.
-    """, language="python")
+with right_col:
+    st.subheader("💓 Pulso do Sistema (Ouroboros)")
+    pulses = [l for l in logs if "Ouroboros" in l]
+    if pulses:
+        for p in pulses[-5:]:
+            st.info(p.strip())
+    else:
+        st.write("Sincronizando batimentos cardíacos do Kernel...")
 
-if st.button("🔄 REINICIALIZAR SENSORES"):
+st.divider()
+
+# 4. DISTRITOS E EXPANSÃO
+st.subheader("🏗️ Expansão Urbana (Distritos)")
+if os.path.exists("city_config.json"):
+    with open("city_config.json", "r") as f:
+        config = json.load(f)
+        st.json(config.get("city_description", "Descrição indisponível"))
+        
+        agents = config.get("agents", [])
+        if agents:
+            st.write(f"🐝 **Agentes Provisionados pelo Swarm:** {len(agents)}")
+            st.table(pd.DataFrame(agents))
+
+if st.button("🔄 REFRESH HOLOGRÁFICO"):
     st.rerun()
 
 st.sidebar.markdown("---")
-st.sidebar.caption("MA-CityOS Resilience Mesh // V5.0.0")
+st.sidebar.write("⚡ **MA-CityOS: Evolução Infinita**")
